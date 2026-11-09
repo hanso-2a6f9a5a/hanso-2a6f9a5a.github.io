@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>茄子视频在线观看免费 - 影视聚合导航与观影指南</title>
+  <meta name="description" content="茄子视频在线观看免费提供电影、剧集、综艺、动漫、纪录片等分类的在线观看入口与片单指南，涵盖热门新片、经典佳作、追剧日历与观影顺序建议，适合想快速找到可看内容的观众。">
+  <meta name="keywords" content="免费影视聚合,在线观影指南,剧集追更日历,电影片单推荐,综艺动漫纪录片">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e3a2f'/%3E%3Cpath d='M32 12c-8 8-14 14-14 22a14 14 0 0 0 28 0c0-8-6-14-14-22z' fill='%23f2c14e'/%3E%3Ccircle cx='32' cy='38' r='5' fill='%231e3a2f'/%3E%3C/svg%3E">
+  <style>
+    :root{
+      --bg:#f6f4ee;
+      --panel:#ffffff;
+      --ink:#1f2a24;
+      --muted:#5c6b62;
+      --line:#dcd8cc;
+      --brand:#1e3a2f;
+      --brand-2:#2f5d47;
+      --accent:#c9821f;
+      --accent-soft:#f7ead3;
+      --radius:14px;
+      --shadow:0 6px 20px rgba(30,58,47,.08);
+      --sticky-offset:118px;
+      --maxw:1360px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-offset)}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;line-height:1.7;font-size:15px}
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+    p{margin:0 0 .9em}
+    ul,ol{margin:0;padding:0;list-style:none}
+    button{font:inherit;cursor:pointer}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+    .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+    /* 吸顶公告条 + 页头 */
+    .sticky-top{position:sticky;top:0;z-index:50}
+    .notice{background:var(--brand);color:#f4efe2;font-size:13px;padding:7px 0}
+    .notice .wrap{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .notice .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none}
+    .notice strong{color:#ffd98a;font-weight:600}
+    .site-header{background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+    .header-inner{display:flex;align-items:center;gap:20px;padding:12px 0;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:10px;flex:none}
+    .brand svg{width:38px;height:38px;flex:none}
+    .brand-text{font-size:19px;font-weight:800;letter-spacing:.5px;color:var(--brand)}
+    .main-nav{display:flex;gap:4px;flex-wrap:wrap;flex:1;min-width:0}
+    .main-nav a{padding:6px 11px;border-radius:999px;font-size:14px;color:var(--muted);white-space:nowrap}
+    .main-nav a:hover,.main-nav a:focus-visible{background:var(--accent-soft);color:var(--brand)}
+    .header-search{display:flex;align-items:center;gap:6px;flex:none}
+    .header-search input{width:170px;padding:7px 11px;border:1px solid var(--line);border-radius:999px;font-size:13px;background:#fbfaf6;color:var(--ink)}
+    .header-search input:focus{outline:2px solid var(--brand-2);outline-offset:1px}
+    .header-search button{padding:7px 14px;border:0;border-radius:999px;background:var(--brand);color:#fff;font-size:13px}
+
+    /* 首屏 */
+    .hero{background:linear-gradient(135deg,#1e3a2f 0%,#2f5d47 58%,#3f7357 100%);color:#f6f2e7;padding:46px 0 40px;position:relative;overflow:hidden}
+    .hero::after{content:"";position:absolute;right:-120px;top:-90px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(242,193,78,.22),transparent 68%)}
+    .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;position:relative;z-index:1}
+    .hero h1{font-size:clamp(26px,3.4vw,40px);letter-spacing:.5px}
+    .hero .lead{margin-top:14px;max-width:640px;color:#e6e0d0;font-size:15.5px}
+    .hero-actions{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:7px;padding:10px 20px;border-radius:999px;font-size:14px;font-weight:600;border:1px solid transparent}
+    .btn-primary{background:var(--accent);color:#201a0c}
+    .btn-ghost{border-color:rgba(246,242,231,.45);color:#f6f2e7}
+    .btn-ghost:hover{background:rgba(255,255,255,.1)}
+    .hero-stats{display:flex;gap:26px;margin-top:28px;flex-wrap:wrap}
+    .hero-stats div{font-size:13px;color:#cfc8b6}
+    .hero-stats b{display:block;font-size:21px;color:#ffd98a;font-weight:800}
+    .hero-visual{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:18px;backdrop-filter:blur(4px)}
+    .hero-visual .pill{display:inline-block;font-size:12px;padding:3px 10px;border-radius:999px;background:rgba(242,193,78,.18);color:#ffd98a;margin-bottom:12px}
+    .mini-list li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.16);font-size:13.5px}
+    .mini-list li:last-child{border-bottom:0}
+    .mini-list span{color:#cfc8b6;flex:none}
+
+    /* 主内容三栏 */
+    .layout{display:grid;grid-template-columns:176px minmax(0,1fr) 250px;gap:26px;padding:32px 0 10px;align-items:start}
+    .side-nav,.side-aux{position:sticky;top:var(--sticky-offset)}
+    .side-nav{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 10px;box-shadow:var(--shadow)}
+    .side-nav h2{font-size:13px;color:var(--muted);padding:0 8px 8px;letter-spacing:1px}
+    .side-nav a{display:block;padding:7px 9px;border-radius:8px;font-size:14px;color:var(--ink)}
+    .side-nav a:hover,.side-nav a:focus-visible{background:var(--accent-soft);color:var(--brand)}
+    .side-aux{display:grid;gap:16px}
+    .aux-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow)}
+    .aux-card h3{font-size:14px;margin-bottom:10px;color:var(--brand)}
+    .rank-list li{display:flex;gap:8px;padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--line)}
+    .rank-list li:last-child{border-bottom:0}
+    .rank-no{font-weight:800;color:var(--accent);min-width:18px}
+    .update-feed li{font-size:13px;color:var(--muted);padding:6px 0;border-bottom:1px dashed var(--line)}
+    .update-feed li:last-child{border-bottom:0}
+    .update-feed b{color:var(--ink);font-weight:600;display:block;font-size:13.5px}
+
+    /* 内容板块通用 */
+    .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);margin-bottom:22px}
+    .panel-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin-bottom:16px;flex-wrap:wrap}
+    .panel-head h2{font-size:19px}
+    .panel-head .sub{font-size:13px;color:var(--muted)}
+    .chip{display:inline-block;font-size:12px;padding:2px 9px;border-radius:999px;background:var(--accent-soft);color:#7a4c0c;white-space:nowrap}
+    .grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .card{background:#fbfaf6;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+    .card img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+    .card-body{padding:12px 13px;display:flex;flex-direction:column;gap:6px;flex:1}
+    .card-body h3{font-size:15px}
+    .card-body p{font-size:13px;color:var(--muted);margin:0}
+    .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+    .tags span{font-size:11.5px;padding:1px 8px;border-radius:999px;background:#eef1ea;color:#42574a}
+    .meta{font-size:12px;color:#8a7a5c}
+    .list-feed li{display:flex;gap:12px;padding:11px 0;border-bottom:1px dashed var(--line);align-items:flex-start}
+    .list-feed li:last-child{border-bottom:0}
+    .list-feed .idx{font-weight:800;color:var(--accent);min-width:24px}
+    .list-feed strong{display:block;font-size:14.5px}
+    .list-feed small{color:var(--muted);font-size:13px}
+    .cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+    .cat-grid a{display:block;text-align:center;padding:14px 8px;border-radius:10px;background:#f3f1e9;border:1px solid var(--line);font-size:14px;font-weight:600}
+    .cat-grid a:hover{background:var(--accent-soft);border-color:#e0c99a}
+    .deep h3{font-size:16px;margin:18px 0 8px;color:var(--brand)}
+    .deep h3:first-child{margin-top:0}
+    .deep p{color:#33443a;font-size:14.5px}
+    .deep ul{list-style:disc;padding-left:20px;margin:0 0 12px;color:#33443a;font-size:14.5px}
+    .deep li{margin-bottom:6px}
+    details{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px;background:#fbfaf6}
+    summary{font-weight:600;font-size:14.5px;cursor:pointer}
+    summary:focus-visible{outline:2px solid var(--brand-2);outline-offset:2px}
+    details p{margin:10px 0 0;font-size:14px;color:var(--muted)}
+    .comment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .comment{background:#fbfaf6;border:1px solid var(--line);border-radius:10px;padding:11px 13px;font-size:13.5px}
+    .comment b{color:var(--brand-2)}
+    .comment span{display:block;color:var(--muted);margin-top:3px}
+    .news-list li{padding:12px 0;border-bottom:1px dashed var(--line)}
+    .news-list li:last-child{border-bottom:0}
+    .news-list h3{font-size:15px;margin-bottom:4px}
+    .news-list time{font-size:12px;color:#8a7a5c}
+    .news-list p{font-size:13.5px;color:var(--muted);margin:4px 0 0}
+    .tag-index{display:flex;flex-wrap:wrap;gap:8px}
+    .tag-index a{font-size:13px;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:#fbfaf6}
+    .tag-index a:hover{background:var(--accent-soft);border-color:#e0c99a}
+    .timeline{border-left:2px solid #e3ddcc;padding-left:18px;margin-left:4px}
+    .timeline li{position:relative;padding-bottom:16px}
+    .timeline li::before{content:"";position:absolute;left:-25px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--accent);border:2px solid #fff}
+    .timeline b{display:block;font-size:14.5px}
+    .timeline span{font-size:13px;color:var(--muted)}
+    .no-result{display:none;padding:14px;border-radius:10px;background:var(--accent-soft);color:#7a4c0c;font-size:14px;margin-top:10px}
+    .no-result.show{display:block}
+
+    /* 页尾 */
+    .site-footer{background:#16271f;color:#c9d2c9;margin-top:34px;padding:36px 0 22px;font-size:13.5px}
+    .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px}
+    .site-footer h3{color:#f2e9d4;font-size:14px;margin-bottom:10px}
+    .site-footer a{color:#c9d2c9;display:block;padding:3px 0}
+    .site-footer a:hover{color:#ffd98a}
+    .footer-brand{font-size:17px;font-weight:800;color:#f2e9d4;margin-bottom:8px}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:26px;padding-top:14px;font-size:12.5px;color:#8fa094;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+    @media(max-width:1024px){
+      .layout{grid-template-columns:minmax(0,1fr) 260px}
+      .side-nav{display:none}
+      .hero-grid{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .footer-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:740px){
+      .layout{grid-template-columns:1fr;padding-top:22px}
+      .side-aux{position:static}
+      .grid-3,.grid-2,.comment-grid{grid-template-columns:1fr}
+      .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .header-search input{width:120px}
+      .main-nav{order:3;width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}
+      .hero{padding:32px 0 28px}
+      .footer-grid{grid-template-columns:1fr}
+      .panel{padding:16px}
+    }
+  </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="notice" role="region" aria-label="更新公告">
+    <div class="wrap">
+      <span class="dot" aria-hidden="true"></span>
+      <span><strong>今日新增 18 条</strong>：院线新片《冬港来信》上线、剧集《雾城档案 第二季》更新至第 6 集、综艺《慢生活实验》第 9 期上线</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/#top" aria-label="茄子视频在线观看免费 首页">
+        <svg viewBox="0 0 64 64" role="img" aria-label="茄子视频在线观看免费 标志">
+          <rect width="64" height="64" rx="14" fill="#1e3a2f"/>
+          <path d="M32 10c-9 9-15 16-15 24a15 15 0 0 0 30 0c0-8-6-15-15-24z" fill="#f2c14e"/>
+          <circle cx="32" cy="38" r="5.4" fill="#1e3a2f"/>
+          <path d="M32 10c3 5 2 9-1 12" stroke="#1e3a2f" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">茄子视频在线观看免费</span>
+      </a>
+      <nav class="main-nav" aria-label="主题导航">
+        <a href="/#picks">精选片单</a>
+        <a href="/#updates">今日更新</a>
+        <a href="/#cats">分类导航</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">观影路径</a>
+        <a href="/#faq">常见问答</a>
+      </nav>
+      <div class="header-search">
+        <label class="sr-only" for="q">搜索片名或类型</label>
+        <input id="q" type="search" placeholder="搜片名 / 类型" autocomplete="off">
+        <button type="button" id="qbtn">查找</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 id="hero-title">茄子视频在线观看免费</h1>
+        <p class="lead">聚合院线新片、热播剧集、口碑综艺、国漫日番与人文纪录片，提供分类入口、追更日历、片单对比和观影顺序参考。适合想快速判断“今晚看什么”的观众，按类型和时长直接筛选。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#picks">查看今日片单</a>
+          <a class="btn btn-ghost" href="/#updates">最新更新条目</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>128</b>部电影可看</div>
+          <div><b>46</b>部剧集追更中</div>
+          <div><b>9</b>档综艺本周更新</div>
+        </div>
+      </div>
+      <aside class="hero-visual" aria-label="今日更新速览">
+        <span class="pill">2026-11-08 更新速览</span>
+        <ul class="mini-list">
+          <li><span>《冬港来信》</span><em>院线新片上线</em></li>
+          <li><span>《雾城档案 第二季》</span><em>第 6 集</em></li>
+          <li><span>《慢生活实验》</span><em>第 9 期</em></li>
+          <li><span>《山海食记》</span><em>第 3 集</em></li>
+          <li><span>《棋局之外》</span><em>更新至 18 集</em></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <!-- 左频道索引 -->
+    <nav class="side-nav" aria-label="频道索引">
+      <h2>频道索引</h2>
+      <a href="/#picks">近期热门电影</a>
+      <a href="/#picks">高分剧集</a>
+      <a href="/#updates">今日更新</a>
+      <a href="/#cats">类型分类</a>
+      <a href="/#deep">观影解析</a>
+      <a href="/#guide">选片路径</a>
+      <a href="/#comments">观众评论</a>
+      <a href="/#news">影视资讯</a>
+      <a href="/#tags">延伸推荐</a>
+      <a href="/#timeline">上线时间线</a>
+    </nav>
+
+    <!-- 中间主内容 -->
+    <div>
+      <!-- 领域概览 -->
+      <section class="panel" aria-labelledby="ov-title">
+        <div class="panel-head">
+          <h2 id="ov-title">影视内容方向概览</h2>
+          <span class="sub">按类型、时长与口碑快速定位</span>
+        </div>
+        <p>当前免费影视内容大致可以分为几个方向：院线新片与网络电影偏重强情节和视听体验，适合整块时间观看；连载剧集按周或按集更新，适合追更和讨论；综艺与真人秀节奏轻快，适合碎片时间；国漫与日番面向系列追番观众；人文纪录片和美食纪录则更适合慢节奏观看。不同方向在更新频率、单集时长和观看门槛上差异明显。</p>
+        <p>从近期片单看，悬疑犯罪类剧集更新密度较高，《雾城档案 第二季》《棋局之外》都属于多线叙事、单集 45 分钟左右的类型；电影方面，《冬港来信》《长夜列车》偏向冷峻写实；综艺《慢生活实验》《厨房盲盒》单期 60—90 分钟，适合周末。纪录片《山海食记》《手艺人图谱》每集 28 分钟，适合通勤时观看。</p>
+        <p>选择时可以先看单集时长，再看更新节奏，最后对比口碑和题材。免费观看入口通常按分类聚合，建议从具体条目页确认清晰度和更新进度，再决定是否追更。</p>
+      </section>
+
+      <!-- 精选推荐 -->
+      <section class="panel" id="picks" aria-labelledby="picks-title">
+        <div class="panel-head">
+          <h2 id="picks-title">精选内容推荐</h2>
+          <span class="sub">2026 年 11 月可看片单</span>
+        </div>
+        <div class="grid-3" id="pickGrid">
+          <article class="card">
+            <img src="https://picsum.photos/seed/donggang-xinjian01/400/300" width="400" height="300" loading="lazy" alt="《冬港来信》电影海报，港口夜色与灯塔">
+            <div class="card-body">
+              <h3>冬港来信</h3>
+              <p>港口小城失踪案牵出旧日信件，双线叙事在雨夜交汇，适合喜欢冷峻写实的观众。</p>
+              <div class="tags"><span>悬疑</span><span>院线新片</span><span>118 分钟</span></div>
+              <span class="meta">热度 9.2 · 今日上线</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/wucheng-dangan02/400/300" width="400" height="300" loading="lazy" alt="《雾城档案 第二季》剧集封面，雾中档案馆">
+            <div class="card-body">
+              <h3>雾城档案 第二季</h3>
+              <p>档案修复师与刑警搭档追查旧案，第二季新增跨城线索，第 6 集已更新。</p>
+              <div class="tags"><span>犯罪</span><span>连载剧集</span><span>45 分钟/集</span></div>
+              <span class="meta">评分 8.7 · 更新至第 6 集</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/manshenghuo09/400/300" width="400" height="300" loading="lazy" alt="《慢生活实验》综艺剧照，山间木屋与餐桌">
+            <div class="card-body">
+              <h3>慢生活实验</h3>
+              <p>六位嘉宾在山村经营一间小食堂，第 9 期主题是秋收后的长桌宴，节奏松弛。</p>
+              <div class="tags"><span>生活综艺</span><span>每周五更新</span><span>75 分钟</span></div>
+              <span class="meta">热度 8.9 · 第 9 期上线</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/qiju-zhiwai11/400/300" width="400" height="300" loading="lazy" alt="《棋局之外》剧集剧照，棋手对弈剪影">
+            <div class="card-body">
+              <h3>棋局之外</h3>
+              <p>职业棋手退役后卷入商业纠纷，对局与人性博弈并行，更新至第 18 集。</p>
+              <div class="tags"><span>都市</span><span>连载剧集</span><span>42 分钟</span></div>
+              <span class="meta">评分 8.4 · 更新至第 18 集</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/shanhai-shiji03/400/300" width="400" height="300" loading="lazy" alt="《山海食记》纪录片画面，渔港早市与蒸汽">
+            <div class="card-body">
+              <h3>山海食记</h3>
+              <p>沿东南沿海记录时令食材与手艺，第 3 集讲秋末渔港的夜捕与腌渍，画面细。</p>
+              <div class="tags"><span>美食纪录</span><span>28 分钟</span><span>周更</span></div>
+              <span class="meta">评分 9.1 · 第 3 集上线</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/changye-lieche07/400/300" width="400" height="300" loading="lazy" alt="《长夜列车》电影剧照，夜间列车车窗倒影">
+            <div class="card-body">
+              <h3>长夜列车</h3>
+              <p>一列夜车上的六段相遇，靠对白推进，适合喜欢文学感和慢节奏的观众。</p>
+              <div class="tags"><span>剧情</span><span>网络电影</span><span>102 分钟</span></div>
+              <span class="meta">热度 8.2 · 可看</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/chufang-manghe05/400/300" width="400" height="300" loading="lazy" alt="《厨房盲盒》综艺剧照，开放式厨房与食材">
+            <div class="card-body">
+              <h3>厨房盲盒</h3>
+              <p>厨师根据随机食材限时出菜，第 12 期用秋季根茎类做三道菜，适合配饭看。</p>
+              <div class="tags"><span>美食综艺</span><span>60 分钟</span><span>周更</span></div>
+              <span class="meta">热度 8.6 · 第 12 期上线</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/shouyiren-tupu04/400/300" width="400" height="300" loading="lazy" alt="《手艺人图谱》纪录片画面，木工工具与工作台">
+            <div class="card-body">
+              <h3>手艺人图谱</h3>
+              <p>走访木作、制陶和织染工坊，第 5 集记录一把木椅的完整制作流程。</p>
+              <div class="tags"><span>人文纪录</span><span>26 分钟</span><span>双周更</span></div>
+              <span class="meta">评分 9.0 · 第 5 集上线</span>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/xinghai-yuanhang08/400/300" width="400" height="300" loading="lazy" alt="《星海远航》动画剧照，飞船与星云">
+            <div class="card-body">
+              <h3>星海远航</h3>
+              <p>国漫科幻系列，第二季聚焦舰队内部的分歧，第 7 集为关键转折。</p>
+              <div class="tags"><span>国漫</span><span>科幻</span><span>24 分钟</span></div>
+              <span class="meta">评分 8.8 · 更新至第 7 集</span>
+            </div>
+          </article>
+        </div>
+        <div class="no-result" id="noResult">没有匹配的条目，换个片名或类型试试。</div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="panel" id="updates" aria-labelledby="up-title">
+        <div class="panel-head">
+          <h2 id="up-title">最新更新与热播动态</h2>
+          <span class="sub">2026-11-08</span>
+        </div>
+        <ul class="list-feed">
+          <li><span class="idx">01</span><div><strong>《雾城档案 第二季》第 6 集上线</strong><small>今天 09:30 · 档案修复线出现新物证，跨城线索展开</small></div></li>
+          <li><span class="idx">02</span><div><strong>《慢生活实验》第 9 期上线</strong><small>今天 08:00 · 秋收长桌宴，嘉宾首次尝试集体备菜</small></div></li>
+          <li><span class="idx">03</span><div><strong>《冬港来信》院线新片可看</strong><small>今天 10:15 · 港口失踪案双线叙事，118 分钟</small></div></li>
+          <li><span class="idx">04</span><div><strong>《棋局之外》更新至第 18 集</strong><small>昨天 21:10 · 商业纠纷线收束，对局戏份加重</small></div></li>
+          <li><span class="idx">05</span><div><strong>《山海食记》第 3 集上线</strong><small>11 月 7 日 20:00 · 秋末渔港夜捕与腌渍工艺</small></div></li>
+          <li><span class="idx">06</span><div><strong>《厨房盲盒》第 12 期上线</strong><small>11 月 6 日 19:30 · 限定根茎类食材，三道菜限时出餐</small></div></li>
+          <li><span class="idx">07</span><div><strong>《星海远航 第二季》第 7 集更新</strong><small>11 月 6 日 12:00 · 舰队内部出现分歧，关键转折</small></div></li>
+          <li><span class="idx">08</span><div><strong>《手艺人图谱》第 5 集上线</strong><small>11 月 5 日 18:00 · 木椅制作全流程记录</small></div></li>
+          <li><span class="idx">09</span><div><strong>《长夜列车》专题合集上线</strong><small>11 月 4 日 15:20 · 夜间列车题材片单，含 6 部影片</small></div></li>
+          <li><span class="idx">10</span><div><strong>《旧城书店》纪录短片可看</strong><small>11 月 3 日 11:40 · 28 分钟，记录一家街角书店的日常</small></div></li>
+        </ul>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="panel" id="cats" aria-labelledby="cat-title">
+        <div class="panel-head">
+          <h2 id="cat-title">分类入口</h2>
+          <span class="sub">按类型筛选可看内容</span>
+        </div>
+        <div class="cat-grid">
+          <a href="/#picks">悬疑犯罪</a>
+          <a href="/#picks">都市剧情</a>
+          <a href="/#picks">科幻国漫</a>
+          <a href="/#picks">生活综艺</a>
+          <a href="/#picks">美食纪录</a>
+          <a href="/#picks">人文纪录</a>
+          <a href="/#picks">院线新片</a>
+          <a href="/#picks">连载剧集</a>
+        </div>
+      </section>
+
+      <!-- 深度解析 -->
+      <section class="panel deep" id="deep" aria-labelledby="deep-title">
+        <div class="panel-head">
+          <h2 id="deep-title">深度解析：免费影视内容的类型差异与选择依据</h2>
+        </div>
+        <h3>院线新片与网络电影的单片时长差异</h3>
+        <p>院线新片通常 100—130 分钟，叙事完整、视听语言成熟，适合整块时间观看；网络电影多在 85—105 分钟，节奏更快，题材更偏向悬疑、动作和奇幻。以《冬港来信》（118 分钟）和《长夜列车》（102 分钟）为例，前者用双线铺陈港口小城的人际关系，后者靠六段对白推进，观看前的预期应不同：想看强情节选前者，想看氛围和文本选后者。</p>
+        <h3>连载剧集的更新节奏与追更成本</h3>
+        <p>连载剧集常见更新方式有周更两集、周更一集和一次放出全集。《雾城档案 第二季》按周更两集推进，单集 45 分钟，适合固定追更；《棋局之外》更新至第 18 集，属于长线叙事，前期铺垫较多，适合有连续时间的观众。判断一部剧是否值得追，可以先看前三集的单集信息量：如果每集都有明确推进，追更成本较低；如果依赖长线伏笔，建议攒几集再看。</p>
+        <ul>
+          <li>单集 25—30 分钟的纪录片和国漫，适合通勤和碎片时间；</li>
+          <li>单集 45—60 分钟的剧集，适合晚间固定时段；</li>
+          <li>单期 60—90 分钟的综艺，适合周末放松；</li>
+          <li>100 分钟以上的电影，建议留出完整时间段。</li>
+        </ul>
+        <h3>综艺与纪录片的观看门槛</h3>
+        <p>生活类综艺如《慢生活实验》《厨房盲盒》不依赖连续剧情，任意一期都能进入，适合配饭或放松；美食和人文纪录片如《山海食记》《手艺人图谱》更强调画面与信息密度，适合专注观看。两类内容对观看环境的要求不同，选择时可以按场景决定，而不是单纯按评分排序。</p>
+        <h3>评分、热度与更新进度怎么一起看</h3>
+        <p>评分反映口碑，热度反映近期讨论量，更新进度决定能否一次看完。对连载剧集，评分高但更新慢的条目适合先收藏；对电影，热度和评分同时较高的条目通常可看性更稳。类型偏好仍是第一层筛选，时长和更新节奏是第二层，评分和热度用于在同类里做最后比较。</p>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="panel" id="guide" aria-labelledby="guide-title">
+        <div class="panel-head">
+          <h2 id="guide-title">观影路径与判断依据</h2>
+        </div>
+        <ol style="list-style:decimal;padding-left:20px;color:#33443a;font-size:14.5px;display:grid;gap:8px">
+          <li><strong>先定时长：</strong>工作日晚间优先选 45 分钟以内的剧集或 30 分钟以内的纪录片，周末再安排 100 分钟以上的电影。</li>
+          <li><strong>再看更新方式：</strong>想一次看完选已完结或一次放出全集的条目；想保持讨论节奏选周更剧集。</li>
+          <li><strong>用前三集判断剧集：</strong>看单集信息量、人物关系是否清晰，再决定是否继续。</li>
+          <li><strong>同类比较看具体差异：</strong>同为悬疑，《雾城档案 第二季》偏档案与物证，《棋局之外》偏人物博弈，按偏好选而不是只按评分。</li>
+          <li><strong>综艺和纪录片按场景选：</strong>配饭选生活综艺，专注观看选信息密度高的纪录片。</li>
+        </ol>
+      </section>
+
+      <!-- FAQ -->
+      <section class="panel" id="faq" aria-labelledby="faq-title">
+        <div class="panel-head">
+          <h2 id="faq-title">常见问答</h2>
+        </div>
+        <details>
+          <summary>《雾城档案 第二季》一周更新几集？</summary>
+          <p>目前按周更两集推进，单集约 45 分钟，2026-11-08 已更新至第 6 集。后续集数按平台排期上线。</p>
+        </details>
+        <details>
+          <summary>《冬港来信》和《长夜列车》有什么区别？</summary>
+          <p>《冬港来信》是 118 分钟的院线新片，双线悬疑、情节推进更强；《长夜列车》是 102 分钟的网络电影，以六段对白为主，节奏更慢，偏文学感。</p>
+        </details>
+        <details>
+          <summary>第一次看国漫科幻，从哪部开始比较好？</summary>
+          <p>可以先看《星海远航》第一季，单集 24 分钟，世界观交代清楚；第二季第 7 集是剧情转折点，建议按顺序看。</p>
+        </details>
+        <details>
+          <summary>生活类综艺一般一期多长时间？</summary>
+          <p>《慢生活实验》单期约 75 分钟，《厨房盲盒》单期约 60 分钟。两档都不依赖连续剧情，任意一期都可以直接进入。</p>
+        </details>
+        <details>
+          <summary>美食纪录片适合什么时候看？</summary>
+          <p>《山海食记》单集 28 分钟，适合通勤或午休；《手艺人图谱》单集 26 分钟，信息密度高，适合专注观看。两部都是周更或双周更。</p>
+        </details>
+        <details>
+          <summary>连载剧集追更前要准备什么？</summary>
+          <p>先确认更新节奏和单集时长，再决定是否攒集。长线叙事剧集如《棋局之外》前期铺垫较多，建议先看前三集再决定是否继续。</p>
+        </details>
+      </section>
+
+      <!-- 用户评论 -->
+      <section class="panel" id="comments" aria-labelledby="cm-title">
+        <div class="panel-head">
+          <h2 id="cm-title">观众评论</h2>
+          <span class="sub">围绕具体条目与类型的讨论</span>
+        </div>
+        <div class="comment-grid">
+          <div class="comment"><b>青柠泡水</b>：《雾城档案 第二季》第 6 集物证线终于接上了，前面几集铺垫有点慢。<span>今天 10:02</span></div>
+          <div class="comment"><b>夜航船</b>：《冬港来信》的雨夜戏拍得很稳，双线交汇那场值得重看。<span>今天 09:41</span></div>
+          <div class="comment"><b>小满不吃葱</b>：《慢生活实验》第 9 期长桌宴比前几期自然，备菜那段笑点密集。<span>今天 08:55</span></div>
+          <div class="comment"><b>半山听雨</b>：《棋局之外》更新到 18 集后节奏快起来了，前 10 集确实有点慢。<span>昨天 22:10</span></div>
+          <div class="comment"><b>不晚</b>：《山海食记》第 3 集的夜捕画面很好，适合吃饭时看。<span>11 月 7 日 21:30</span></div>
+          <div class="comment"><b>白桃乌龙</b>：《厨房盲盒》第 12 期根茎类三道菜里第二道最有想法。<span>11 月 6 日 20:15</span></div>
+          <div class="comment"><b>旧书页</b>：《长夜列车》对白写得好，但节奏偏慢，适合晚上安静看。<span>11 月 6 日 18:40</span></div>
+          <div class="comment"><b>林间有风</b>：《星海远航 第二季》第 7 集的分歧戏是这季目前最好的一集。<span>11 月 6 日 13:20</span></div>
+          <div class="comment"><b>慢半拍</b>：《手艺人图谱》木椅那集流程清楚，适合对木作感兴趣的人。<span>11 月 5 日 19:05</span></div>
+          <div class="comment"><b>汽水加冰</b>：《雾城档案 第二季》档案修复的细节比第一季多，这点不错。<span>11 月 5 日 16:47</span></div>
+          <div class="comment"><b>南窗</b>：《慢生活实验》希望后面多拍备菜，少拍闲聊。<span>11 月 4 日 21:12</span></div>
+          <div class="comment"><b>阿七</b>：《棋局之外》对局戏如果能再专业一点会更好。<span>11 月 4 日 15:30</span></div>
+          <div class="comment"><b>山月</b>：《冬港来信》整体不错，结尾稍显仓促。<span>11 月 3 日 22:18</span></div>
+          <div class="comment"><b>柚子茶</b>：《厨房盲盒》第 12 期出餐节奏比上期顺。<span>11 月 3 日 20:02</span></div>
+          <div class="comment"><b>远山</b>：《山海食记》腌渍那段讲得细，适合反复看。<span>11 月 2 日 18:36</span></div>
+          <div class="comment"><b>小岛日记</b>：《星海远航》第二季世界观比第一季大，希望后面收得住。<span>11 月 2 日 12:10</span></div>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="panel" id="news" aria-labelledby="news-title">
+        <div class="panel-head">
+          <h2 id="news-title">相关资讯</h2>
+        </div>
+        <ul class="news-list">
+          <li>
+            <h3>《雾城档案 第二季》更新排期调整，11 月改为周更两集</h3>
+            <time datetime="2026-11-08">2026-11-08</time>
+            <p>平台公布新排期，11 月内保持每周两集更新，第 6 集后新增跨城线索支线。</p>
+          </li>
+          <li>
+            <h3>《冬港来信》上线首日进入电影热度前列</h3>
+            <time datetime="2026-11-07">2026-11-07</time>
+            <p>该片以港口失踪案为主线，双线叙事和雨夜摄影成为讨论焦点。</p>
+          </li>
+          <li>
+            <h3>生活类综艺秋季档竞争加剧，《慢生活实验》与《厨房盲盒》同期更新</h3>
+            <time datetime="2026-11-06">2026-11-06</time>
+            <p>两档节目分别在周五和周四更新，单期时长和场景设定差异明显。</p>
+          </li>
+          <li>
+            <h3>《星海远航 第二季》第 7 集引发舰队设定讨论</h3>
+            <time datetime="2026-11-05">2026-11-05</time>
+            <p>观众围绕舰队内部决策机制和角色动机展开讨论，官方未作进一步说明。</p>
+          </li>
+          <li>
+            <h3>美食纪录片《山海食记》新增沿海三地拍摄</h3>
+            <time datetime="2026-11-04">2026-11-04</time>
+            <p>第 3 至 5 集分别记录渔港、盐场和酱坊，单集维持 28 分钟。</p>
+          </li>
+          <li>
+            <h3>《长夜列车》加入夜间题材专题合集</h3>
+            <time datetime="2026-11-03">2026-11-03</time>
+            <p>专题合集共 6 部影片，围绕夜间列车和公路场景展开。</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="panel" id="tags" aria-labelledby="tag-title">
+        <div class="panel-head">
+          <h2 id="tag-title">相关推荐</h2>
+          <span class="sub">延伸方向与具体条目</span>
+        </div>
+        <div class="tag-index">
+          <a href="/#picks">双线叙事悬疑片</a>
+          <a href="/#picks">45 分钟犯罪剧集</a>
+          <a href="/#picks">山村生活综艺</a>
+          <a href="/#picks">沿海美食纪录片</a>
+          <a href="/#picks">国漫科幻系列</a>
+          <a href="/#picks">夜间列车题材</a>
+          <a href="/#picks">木作手艺人纪录</a>
+          <a href="/#picks">短剧集清单</a>
+        </div>
+      </section>
+
+      <!-- 时间线补充板块 -->
+      <section class="panel" id="timeline" aria-labelledby="tl-title">
+        <div class="panel-head">
+          <h2 id="tl-title">近期条目上线时间线</h2>
+        </div>
+        <ul class="timeline">
+          <li><b>2026-11-08 · 《冬港来信》上线</b><span>院线新片，118 分钟，悬疑犯罪</span></li>
+          <li><b>2026-11-08 · 《雾城档案 第二季》第 6 集</b><span>连载剧集，45 分钟</span></li>
+          <li><b>2026-11-07 · 《山海食记》第 3 集</b><span>美食纪录片，28 分钟</span></li>
+          <li><b>2026-11-06 · 《星海远航 第二季》第 7 集</b><span>国漫科幻，24 分钟</span></li>
+          <li><b>2026-11-05 · 《手艺人图谱》第 5 集</b><span>人文纪录片，26 分钟</span></li>
+          <li><b>2026-11-03 · 《旧城书店》纪录短片</b><span>单集 28 分钟</span></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- 右侧辅助栏 -->
+    <aside class="side-aux" aria-label="辅助信息">
+      <div class="aux-card">
+        <h3>今日热榜</h3>
+        <ul class="rank-list">
+          <li><span class="rank-no">1</span>《雾城档案 第二季》</li>
+          <li><span class="rank-no">2</span>《冬港来信》</li>
+          <li><span class="rank-no">3</span>《慢生活实验》</li>
+          <li><span class="rank-no">4</span>《棋局之外》</li>
+          <li><span class="rank-no">5</span>《山海食记》</li>
+          <li><span class="rank-no">6</span>《厨房盲盒》</li>
+        </ul>
+      </div>
+      <div class="aux-card">
+        <h3>更新流</h3>
+        <ul class="update-feed">
+          <li><b>《雾城档案 第二季》</b>第 6 集 · 今天 09:30</li>
+          <li><b>《慢生活实验》</b>第 9 期 · 今天 08:00</li>
+          <li><b>《棋局之外》</b>第 18 集 · 昨天 21:10</li>
+          <li><b>《山海食记》</b>第 3 集 · 11 月 7 日</li>
+        </ul>
+      </div>
+      <div class="aux-card">
+        <h3>类型速查</h3>
+        <div class="tag-index">
+          <a href="/#picks">悬疑</a>
+          <a href="/#picks">犯罪</a>
+          <a href="/#picks">都市</a>
+          <a href="/#picks">科幻</a>
+          <a href="/#picks">综艺</a>
+          <a href="/#picks">纪录片</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">茄子视频在线观看免费</div>
+        <p style="color:#a9b7ab;margin:0">聚合电影、剧集、综艺、动漫与纪录片的分类入口和观影参考，按类型、时长和更新节奏整理可看内容。</p>
+      </div>
+      <div>
+        <h3>内容分类</h3>
+        <a href="/#picks">悬疑犯罪</a>
+        <a href="/#picks">都市剧情</a>
+        <a href="/#picks">科幻国漫</a>
+        <a href="/#picks">生活综艺</a>
+      </div>
+      <div>
+        <h3>观影参考</h3>
+        <a href="/#guide">观影路径</a>
+        <a href="/#deep">类型解析</a>
+        <a href="/#updates">更新动态</a>
+        <a href="/#timeline">上线时间线</a>
+      </div>
+      <div>
+        <h3>帮助与讨论</h3>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">观众评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#tags">延伸推荐</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 茄子视频在线观看免费 · 内容聚合示例</span>
+      <span>部分内容为示例数据，仅用于展示页面结构</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var q = document.getElementById('q');
+    var btn = document.getElementById('qbtn');
+    var grid = document.getElementById('pickGrid');
+    var noResult = document.getElementById('noResult');
+    var cards = grid ? Array.prototype.slice.call(grid.querySelectorAll('.card')) : [];
+
+    function runSearch(){
+      var kw = (q.value || '').trim().toLowerCase();
+      if(!kw){
+        cards.forEach(function(c){ c.style.display = ''; });
+        noResult.classList.remove('show');
+        return;
+      }
+      var shown = 0;
+      cards.forEach(function(c){
+        var text = c.textContent.toLowerCase();
+        var hit = text.indexOf(kw) !== -1;
+        c.style.display = hit ? '' : 'none';
+        if(hit) shown++;
+      });
+      noResult.classList.toggle('show', shown === 0);
+    }
+
+    if (btn && q) {
+      btn.addEventListener('click', runSearch);
+      q.addEventListener('input', runSearch);
+      q.addEventListener('keydown', function(e){
+        if(e.key === 'Enter'){ runSearch(); }
+      });
+    }
+  })();
+</script>
+</body>
+            </html>
