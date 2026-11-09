@@ -1,0 +1,1148 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>吃瓜网chigua - 娱乐热点聚合与事件梳理</title>
+<meta name="description" content="吃瓜网chigua聚合娱乐圈热点事件、综艺名场面、剧集播出动态与明星行程变化，提供事件时间线梳理、多来源观点对照、榜单追踪和深度解析，适合关注娱乐话题、想快速弄清事件来龙去脉的读者。">
+<meta name="keywords" content="娱乐热点,明星动态,综艺名场面,剧集播出,事件时间线">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a7f5a'/%3E%3Ccircle cx='32' cy='30' r='13' fill='none' stroke='%23f3e9d2' stroke-width='3'/%3E%3Cpath d='M19 30h26M32 17v26' stroke='%23f3e9d2' stroke-width='2'/%3E%3Cpath d='M20 46c6-5 18-5 24 0' fill='none' stroke='%23f0b429' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --green-900:#0f3d2b;
+    --green-700:#1a7f5a;
+    --green-600:#22946a;
+    --green-100:#e6f4ee;
+    --amber-500:#f0b429;
+    --amber-100:#fdf3d8;
+    --ink-900:#1b2320;
+    --ink-700:#3c4a44;
+    --ink-500:#66756e;
+    --ink-300:#9aa8a2;
+    --line:#dbe5e0;
+    --bg:#f5f8f6;
+    --panel:#ffffff;
+    --shadow:0 2px 10px rgba(15,61,43,.07);
+    --shadow-lg:0 8px 28px rgba(15,61,43,.12);
+    --radius:12px;
+    --radius-sm:8px;
+    --max:1320px;
+    --header-h:104px;
+    --serif:"Songti SC","Noto Serif SC",Georgia,serif;
+    --sans:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--bg);color:var(--ink-900);
+    font-family:var(--sans);font-size:15px;line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--green-700);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  h1,h2,h3,h4{margin:0;line-height:1.35;font-family:var(--serif);}
+  p{margin:0 0 .8em;}
+  ul{margin:0;padding:0;list-style:none;}
+  img{display:block;max-width:100%;}
+  button{font-family:inherit;}
+  [id]{scroll-margin-top:calc(var(--header-h) + 16px);}
+
+  /* ============ 吸顶公告条 ============ */
+  .notice-bar{
+    background:linear-gradient(90deg,var(--green-900),var(--green-700));
+    color:#eaf5ef;font-size:13.5px;
+  }
+  .notice-inner{
+    max-width:var(--max);margin:0 auto;padding:8px 20px;
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  }
+  .notice-tag{
+    background:var(--amber-500);color:var(--green-900);
+    font-weight:700;font-size:12px;padding:1px 8px;border-radius:20px;
+    letter-spacing:.5px;white-space:nowrap;
+  }
+  .notice-inner a{color:#fff;border-bottom:1px dotted rgba(255,255,255,.6);}
+  .notice-inner a:hover{text-decoration:none;border-bottom-style:solid;}
+  .notice-sep{color:rgba(255,255,255,.35);}
+
+  /* ============ 吸顶页头 ============ */
+  .site-header{
+    position:sticky;top:0;z-index:60;
+    background:rgba(255,255,255,.96);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);box-shadow:var(--shadow);
+  }
+  .header-inner{
+    max-width:var(--max);margin:0 auto;padding:12px 20px;
+    display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;gap:10px;}
+  .brand-mark{width:42px;height:42px;flex:0 0 auto;}
+  .brand-text{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--green-900);letter-spacing:.5px;}
+  .brand-sub{display:block;font-family:var(--sans);font-size:11.5px;font-weight:400;color:var(--ink-500);letter-spacing:1.4px;margin-top:-2px;}
+  .main-nav{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto;}
+  .main-nav a{
+    color:var(--ink-700);font-size:14px;padding:6px 11px;border-radius:20px;
+    transition:.18s;white-space:nowrap;
+  }
+  .main-nav a:hover,.main-nav a:focus-visible{
+    background:var(--green-100);color:var(--green-900);text-decoration:none;outline:none;
+  }
+  .main-nav a:focus-visible{box-shadow:0 0 0 2px var(--green-600);}
+  .header-search{
+    display:flex;align-items:center;gap:6px;border:1px solid var(--line);
+    border-radius:20px;padding:3px 4px 3px 12px;background:#fbfdfc;
+  }
+  .header-search input{
+    border:none;background:transparent;outline:none;font-size:13.5px;
+    width:132px;font-family:inherit;color:var(--ink-900);
+  }
+  .header-search button{
+    border:none;background:var(--green-700);color:#fff;font-size:13px;
+    padding:4px 12px;border-radius:16px;cursor:pointer;
+  }
+  .header-search button:hover{background:var(--green-900);}
+  .search-feedback{
+    max-width:var(--max);margin:0 auto;padding:0 20px 8px;font-size:13px;color:var(--ink-500);display:none;
+  }
+  .search-feedback.show{display:block;}
+
+  /* ============ 首屏 ============ */
+  .hero{
+    background:
+      radial-gradient(circle at 88% 12%,rgba(240,180,41,.16),transparent 46%),
+      linear-gradient(160deg,#f0f7f3 0%,#e3f0e9 100%);
+    border-bottom:1px solid var(--line);
+    position:relative;overflow:hidden;
+  }
+  .hero-inner{
+    max-width:var(--max);margin:0 auto;padding:52px 20px 46px;
+    display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+    gap:44px;align-items:center;position:relative;z-index:2;
+  }
+  .hero-kicker{
+    display:inline-flex;align-items:center;gap:8px;font-size:12.5px;
+    letter-spacing:2px;color:var(--green-700);font-weight:600;margin-bottom:14px;
+  }
+  .hero-kicker::before{content:"";width:26px;height:2px;background:var(--amber-500);}
+  .hero h1{
+    font-size:clamp(30px,4.4vw,50px);color:var(--green-900);
+    letter-spacing:1px;margin-bottom:18px;
+  }
+  .hero-lead{
+    font-size:16px;color:var(--ink-700);max-width:560px;margin-bottom:24px;line-height:1.85;
+  }
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn{
+    display:inline-flex;align-items:center;gap:7px;padding:10px 22px;border-radius:26px;
+    font-size:14.5px;font-weight:600;transition:.18s;border:1.5px solid transparent;
+  }
+  .btn-primary{background:var(--green-700);color:#fff;}
+  .btn-primary:hover{background:var(--green-900);text-decoration:none;}
+  .btn-ghost{border-color:var(--green-700);color:var(--green-700);background:rgba(255,255,255,.6);}
+  .btn-ghost:hover{background:var(--green-100);text-decoration:none;}
+  .hero-visual{position:relative;min-height:300px;}
+  .hero-visual svg{width:100%;height:auto;display:block;}
+  .hero-float{
+    position:absolute;background:#fff;border-radius:10px;padding:8px 13px;
+    box-shadow:var(--shadow-lg);font-size:12.5px;color:var(--ink-700);border-left:3px solid var(--amber-500);
+  }
+  .hf1{top:6%;right:2%;}
+  .hf2{bottom:14%;left:0;}
+  .hf3{bottom:0;right:12%;border-left-color:var(--green-600);}
+
+  /* ============ 三栏门户 ============ */
+  .portal{
+    max-width:var(--max);margin:0 auto;padding:30px 20px 0;
+    display:grid;grid-template-columns:180px minmax(0,1fr) 268px;
+    gap:28px;align-items:start;
+  }
+  .channel-rail{position:sticky;top:calc(var(--header-h) + 16px);}
+  .rail-card{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:16px 0;box-shadow:var(--shadow);
+  }
+  .rail-title{
+    font-family:var(--serif);font-size:14px;color:var(--green-900);font-weight:700;
+    padding:0 16px 10px;border-bottom:1px solid var(--line);margin-bottom:8px;letter-spacing:1px;
+  }
+  .rail-list li a{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:7px 16px;font-size:14px;color:var(--ink-700);transition:.15s;
+  }
+  .rail-list li a:hover{background:var(--green-100);color:var(--green-900);text-decoration:none;padding-left:19px;}
+  .rail-list .cnt{font-size:11.5px;color:var(--ink-300);}
+  .rail-note{
+    margin-top:14px;background:var(--amber-100);border-radius:var(--radius-sm);
+    padding:12px 14px;font-size:12.5px;color:#7a5b12;line-height:1.7;
+  }
+  .rail-note strong{display:block;font-size:13px;color:#5c4206;margin-bottom:3px;}
+
+  .main-col{min-width:0;}
+  .side-col{min-width:0;position:sticky;top:calc(var(--header-h) + 16px);}
+
+  /* ============ 通用板块 ============ */
+  .section{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px 26px 28px;margin-bottom:26px;box-shadow:var(--shadow);
+  }
+  .sec-head{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:6px;}
+  .sec-head h2{
+    font-size:22px;color:var(--green-900);letter-spacing:.5px;position:relative;padding-left:14px;
+  }
+  .sec-head h2::before{
+    content:"";position:absolute;left:0;top:6px;bottom:4px;width:4px;border-radius:3px;
+    background:linear-gradient(180deg,var(--green-700),var(--amber-500));
+  }
+  .sec-sub{font-size:13.5px;color:var(--ink-500);margin:0 0 18px;padding-left:18px;line-height:1.7;}
+  .sec-head .more{margin-left:auto;font-size:13px;color:var(--green-700);}
+
+  /* 概览 */
+  .overview-text{font-size:15px;color:var(--ink-700);line-height:1.95;}
+  .overview-text p{margin-bottom:1em;}
+  .overview-text strong{color:var(--green-900);}
+
+  /* 精选卡片 */
+  .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:16px;}
+  .pick-card{
+    border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+    background:#fff;display:flex;flex-direction:column;transition:.2s;
+  }
+  .pick-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:#bfd8cc;}
+  .pick-thumb{position:relative;}
+  .pick-thumb img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;}
+  .pick-type{
+    position:absolute;left:10px;top:10px;background:rgba(15,61,43,.86);color:#fff;
+    font-size:11.5px;padding:2px 9px;border-radius:12px;letter-spacing:.5px;
+  }
+  .pick-body{padding:13px 14px 15px;display:flex;flex-direction:column;flex:1;}
+  .pick-body h3{font-size:16px;color:var(--ink-900);margin-bottom:7px;letter-spacing:.3px;}
+  .pick-desc{font-size:13px;color:var(--ink-500);line-height:1.72;margin-bottom:11px;flex:1;}
+  .tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;}
+  .tag{
+    font-size:11.5px;color:var(--green-700);background:var(--green-100);
+    padding:1px 8px;border-radius:10px;white-space:nowrap;
+  }
+  .pick-meta{
+    display:flex;justify-content:space-between;align-items:center;font-size:12px;
+    color:var(--ink-300);border-top:1px dashed var(--line);padding-top:9px;
+  }
+  .pick-meta .heat{color:#c9761b;font-weight:700;}
+
+  /* 动态列表 */
+  .update-list li{
+    display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:baseline;
+    padding:11px 0;border-bottom:1px dashed var(--line);
+  }
+  .update-list li:last-child{border-bottom:none;}
+  .up-dot{width:7px;height:7px;border-radius:50%;background:var(--green-600);margin-top:8px;}
+  .up-dot.hot{background:#e0503a;box-shadow:0 0 0 3px rgba(224,80,58,.14);}
+  .up-name{font-size:14.5px;color:var(--ink-900);font-weight:600;}
+  .up-name a{color:inherit;}
+  .up-name a:hover{color:var(--green-700);}
+  .up-sum{font-size:13px;color:var(--ink-500);margin-top:1px;}
+  .up-time{font-size:12px;color:var(--ink-300);white-space:nowrap;}
+
+  /* 分类入口 */
+  .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;}
+  .cat-item{
+    border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 15px;
+    background:linear-gradient(135deg,#fbfdfc,#f1f8f4);transition:.18s;display:block;
+  }
+  .cat-item:hover{border-color:var(--green-600);box-shadow:var(--shadow);text-decoration:none;transform:translateY(-2px);}
+  .cat-item .cat-name{font-family:var(--serif);font-size:15.5px;color:var(--green-900);font-weight:700;display:block;margin-bottom:3px;}
+  .cat-item .cat-desc{font-size:12.5px;color:var(--ink-500);line-height:1.6;}
+
+  /* 深度解析 */
+  .deep h3{
+    font-size:17px;color:var(--green-900);margin:22px 0 8px;
+    padding-left:11px;border-left:3px solid var(--amber-500);
+  }
+  .deep h3:first-of-type{margin-top:8px;}
+  .deep p{font-size:14.5px;color:var(--ink-700);line-height:1.92;}
+  .deep ul{margin:6px 0 14px;padding-left:2px;}
+  .deep ul li{
+    font-size:14px;color:var(--ink-700);line-height:1.85;padding-left:18px;position:relative;margin-bottom:5px;
+  }
+  .deep ul li::before{
+    content:"";position:absolute;left:2px;top:11px;width:6px;height:6px;
+    border-radius:50%;background:var(--green-600);opacity:.6;
+  }
+  .deep .em{color:var(--green-900);font-weight:600;}
+
+  /* 体验指南 */
+  .step-list{counter-reset:step;display:grid;gap:14px;}
+  .step{
+    display:grid;grid-template-columns:40px minmax(0,1fr);gap:14px;
+    background:#fbfdfc;border:1px solid var(--line);border-radius:var(--radius-sm);padding:15px 17px;
+  }
+  .step-num{
+    counter-increment:step;width:36px;height:36px;border-radius:50%;
+    background:var(--green-700);color:#fff;display:grid;place-items:center;
+    font-family:var(--serif);font-size:16px;font-weight:700;
+  }
+  .step-num::before{content:counter(step,decimal-leading-zero);}
+  .step h4{font-size:15.5px;color:var(--green-900);margin-bottom:4px;}
+  .step p{font-size:13.5px;color:var(--ink-500);margin:0;line-height:1.75;}
+
+  /* FAQ */
+  .faq-item{
+    border-bottom:1px solid var(--line);
+  }
+  .faq-item:last-child{border-bottom:none;}
+  .faq-item summary{
+    cursor:pointer;padding:13px 26px 13px 4px;font-size:15px;font-weight:600;
+    color:var(--ink-900);position:relative;list-style:none;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{
+    content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);
+    font-size:19px;color:var(--green-600);font-weight:400;transition:.2s;
+  }
+  .faq-item[open] summary::after{content:"−";}
+  .faq-item summary:hover{color:var(--green-700);}
+  .faq-item summary:focus-visible{outline:2px solid var(--green-600);outline-offset:2px;border-radius:4px;}
+  .faq-answer{padding:0 8px 16px 4px;font-size:14px;color:var(--ink-700);line-height:1.88;}
+
+  /* 评论 */
+  .comment-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:13px;}
+  .comment{
+    background:#fbfdfc;border:1px solid var(--line);border-radius:var(--radius-sm);
+    padding:13px 15px;
+  }
+  .cm-head{display:flex;align-items:center;gap:8px;margin-bottom:6px;}
+  .avatar{
+    width:28px;height:28px;border-radius:50%;display:grid;place-items:center;
+    font-size:12.5px;font-weight:700;color:#fff;flex:0 0 auto;font-family:var(--serif);
+  }
+  .cm-name{font-size:13px;font-weight:600;color:var(--ink-700);}
+  .cm-time{font-size:11.5px;color:var(--ink-300);margin-left:auto;}
+  .cm-text{font-size:13px;color:var(--ink-700);line-height:1.75;margin:0;}
+  .cm-text b{color:var(--green-900);font-weight:600;}
+
+  /* 资讯 */
+  .news-list li{
+    display:grid;grid-template-columns:88px minmax(0,1fr);gap:14px;
+    padding:13px 0;border-bottom:1px dashed var(--line);
+  }
+  .news-list li:last-child{border-bottom:none;}
+  .news-thumb img{border-radius:var(--radius-sm);aspect-ratio:6/4;object-fit:cover;width:100%;height:auto;}
+  .news-date{font-size:12px;color:var(--green-700);font-weight:600;letter-spacing:.5px;}
+  .news-title{font-size:14.5px;color:var(--ink-900);font-weight:600;margin:1px 0 3px;}
+  .news-title a{color:inherit;}
+  .news-sum{font-size:12.8px;color:var(--ink-500);line-height:1.65;margin:0;}
+
+  /* 相关推荐 标签索引 */
+  .rec-tags{display:flex;flex-wrap:wrap;gap:9px;}
+  .rec-tags a{
+    font-size:13.5px;padding:6px 14px;border-radius:18px;border:1px solid var(--line);
+    color:var(--ink-700);background:#fff;transition:.16s;
+  }
+  .rec-tags a:hover{background:var(--green-700);color:#fff;border-color:var(--green-700);text-decoration:none;}
+
+  /* 榜单 */
+  .rank-list{counter-reset:rk;}
+  .rank-list li{
+    counter-increment:rk;display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:11px;
+    align-items:center;padding:9px 0;border-bottom:1px dashed var(--line);
+  }
+  .rank-list li:last-child{border-bottom:none;}
+  .rank-list li::before{
+    content:counter(rk);font-family:var(--serif);font-size:15px;font-weight:700;
+    color:var(--ink-300);text-align:center;
+  }
+  .rank-list li:nth-child(-n+3)::before{color:var(--amber-500);}
+  .rk-name{font-size:14px;color:var(--ink-900);font-weight:600;}
+  .rk-sub{font-size:12px;color:var(--ink-300);}
+  .rk-val{font-size:12px;color:#c9761b;font-weight:700;white-space:nowrap;}
+
+  /* 时间线 */
+  .timeline{position:relative;padding-left:22px;}
+  .timeline::before{
+    content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;
+    background:linear-gradient(180deg,var(--green-600),var(--amber-500));
+    border-radius:2px;
+  }
+  .tl-item{position:relative;padding-bottom:16px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{
+    content:"";position:absolute;left:-21px;top:6px;width:9px;height:9px;
+    border-radius:50%;background:#fff;border:2px solid var(--green-600);
+  }
+  .tl-date{font-size:12px;color:var(--green-700);font-weight:700;letter-spacing:.5px;}
+  .tl-title{font-size:14px;color:var(--ink-900);font-weight:600;margin:1px 0 2px;}
+  .tl-desc{font-size:12.8px;color:var(--ink-500);line-height:1.65;margin:0;}
+
+  /* 侧栏 */
+  .side-card{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:18px 18px 20px;margin-bottom:20px;box-shadow:var(--shadow);
+  }
+  .side-card h2{
+    font-size:16px;color:var(--green-900);margin-bottom:4px;letter-spacing:.5px;
+    display:flex;align-items:center;gap:7px;
+  }
+  .side-card h2::before{content:"";width:4px;height:15px;border-radius:2px;background:var(--amber-500);}
+  .side-sub{font-size:12.5px;color:var(--ink-300);margin-bottom:13px;}
+  .side-list li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px;}
+  .side-list li:last-child{border-bottom:none;}
+  .side-list a{color:var(--ink-700);display:block;}
+  .side-list a:hover{color:var(--green-700);}
+  .side-list .s-time{display:block;font-size:11.5px;color:var(--ink-300);margin-top:1px;}
+  .side-hot li{display:grid;grid-template-columns:20px minmax(0,1fr);gap:8px;padding:7px 0;align-items:baseline;}
+  .side-hot .n{font-family:var(--serif);font-weight:700;color:var(--ink-300);font-size:13.5px;}
+  .side-hot li:nth-child(-n+3) .n{color:#c9761b;}
+  .side-hot .t{font-size:13.5px;color:var(--ink-700);}
+  .side-tip{
+    background:var(--green-100);border-radius:var(--radius-sm);padding:13px 14px;
+    font-size:12.5px;color:var(--green-900);line-height:1.72;
+  }
+  .side-tip strong{display:block;margin-bottom:3px;font-size:13px;}
+
+  /* 页尾 */
+  .site-footer{
+    background:var(--green-900);color:#c9ddd3;margin-top:40px;padding:40px 20px 26px;
+  }
+  .footer-inner{max-width:var(--max);margin:0 auto;}
+  .footer-top{display:grid;grid-template-columns:1.3fr 2fr;gap:36px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.12);}
+  .f-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+  .f-brand .brand-text{color:#fff;}
+  .f-brand .brand-sub{color:#8fb6a5;}
+  .f-desc{font-size:13px;line-height:1.8;color:#a9c8ba;max-width:330px;}
+  .f-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .f-col h3{font-size:13.5px;color:#fff;margin-bottom:9px;letter-spacing:1px;font-family:var(--sans);font-weight:600;}
+  .f-col li{margin-bottom:6px;}
+  .f-col a{font-size:12.8px;color:#a9c8ba;}
+  .f-col a:hover{color:#fff;}
+  .footer-bottom{
+    padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+    font-size:12px;color:#8fb6a5;
+  }
+
+  /* 响应式 */
+  @media (max-width:1180px){
+    .portal{grid-template-columns:160px minmax(0,1fr) 240px;gap:20px;}
+    .main-nav a{font-size:13.5px;padding:6px 8px;}
+  }
+  @media (max-width:1024px){
+    .portal{grid-template-columns:170px minmax(0,1fr);}
+    .side-col{position:static;grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+    .side-col .side-card{margin-bottom:0;}
+    .hero-inner{grid-template-columns:1fr;gap:28px;}
+    .hero-visual{min-height:auto;max-width:520px;}
+    .hero-float{display:none;}
+    .header-search input{width:104px;}
+  }
+  @media (max-width:820px){
+    .main-nav{width:100%;order:3;margin-left:0;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;}
+    .header-inner{gap:12px;}
+    .footer-top{grid-template-columns:1fr;gap:24px;}
+    .f-cols{grid-template-columns:repeat(2,1fr);}
+  }
+  @media (max-width:740px){
+    :root{--header-h:118px;}
+    .portal{grid-template-columns:1fr;padding-top:20px;}
+    .channel-rail{position:static;grid-row:auto;}
+    .rail-card{padding:12px 0;}
+    .rail-list{display:flex;flex-wrap:wrap;gap:4px;padding:0 12px;}
+    .rail-list li a{padding:5px 11px;background:var(--green-100);border-radius:16px;font-size:13px;}
+    .rail-list li a:hover{padding-left:11px;background:var(--green-700);color:#fff;}
+    .rail-list .cnt{display:none;}
+    .rail-note{margin:12px;}
+    .side-col{grid-template-columns:1fr;}
+    .section{padding:20px 16px 22px;}
+    .sec-head h2{font-size:19.5px;}
+    .card-grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));}
+    .comment-grid{grid-template-columns:1fr;}
+    .news-list li{grid-template-columns:70px minmax(0,1fr);gap:11px;}
+    .hero-inner{padding:34px 16px 30px;}
+    .hero-lead{font-size:14.5px;}
+    .header-search input{width:88px;}
+    .f-cols{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:400px){
+    .card-grid{grid-template-columns:1fr;}
+    .update-list li{grid-template-columns:auto minmax(0,1fr);}
+    .up-time{grid-column:2;font-size:11.5px;}
+    .header-search input{width:70px;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none!important;animation:none!important;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="notice-bar" id="noticebar">
+  <div class="notice-inner">
+    <span class="notice-tag">今日更新</span>
+    <span>11 月 8 日新增 9 条事件时间线</span>
+    <span class="notice-sep">·</span>
+    <span>《长风渡口》第 18 集上线，弹幕破 42 万</span>
+    <span class="notice-sep">·</span>
+    <a href="/#zuixin">查看全部动态</a>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="吃瓜网chigua 图形标志">
+        <rect width="64" height="64" rx="14" fill="#1a7f5a"/>
+        <circle cx="32" cy="30" r="13" fill="none" stroke="#f3e9d2" stroke-width="3"/>
+        <path d="M19 30h26M32 17v26" stroke="#f3e9d2" stroke-width="2"/>
+        <path d="M20 46c6-5 18-5 24 0" fill="none" stroke="#f0b429" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <span class="brand-text">吃瓜网chigua</span>
+        <span class="brand-sub">娱乐热点 · 事件梳理</span>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="主题频道导航">
+      <a href="/#gaishu">领域概览</a>
+      <a href="/#jingxuan">精选事件</a>
+      <a href="/#zuixin">最新动态</a>
+      <a href="/#fenlei">分类入口</a>
+      <a href="/#shendu">深度解析</a>
+      <a href="/#zhinan">观看指南</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#pinglun">网友评论</a>
+      <a href="/#zixun">相关资讯</a>
+      <a href="/#tuijian">延伸方向</a>
+      <a href="/#bangdan">热度榜单</a>
+      <a href="/#shijian">事件时间线</a>
+    </nav>
+    <form class="header-search" id="searchForm" role="search">
+      <label for="siteSearch" style="position:absolute;left:-9999px;">站内查找事件或条目</label>
+      <input type="search" id="siteSearch" placeholder="查找事件 / 条目" autocomplete="off">
+      <button type="submit">查找</button>
+    </form>
+  </div>
+  <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-kicker">吃瓜网chigua · 事件追踪</span>
+      <h1>吃瓜网chigua</h1>
+      <p class="hero-lead">
+        聚合近 30 天娱乐圈热点事件、综艺名场面、剧集播出进度与明星行程变化。每条话题都附时间线、多来源说法对照与关键节点，
+        帮助你在刷到片段之前先弄清事件走向。
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#zuixin">看今日动态</a>
+        <a class="btn btn-ghost" href="/#shendu">读事件解析</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 420 320" role="presentation">
+        <defs>
+          <linearGradient id="gA" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ffffff"/>
+            <stop offset="1" stop-color="#e6f4ee"/>
+          </linearGradient>
+        </defs>
+        <rect x="26" y="34" width="368" height="248" rx="18" fill="url(#gA)" stroke="#c9e0d5"/>
+        <rect x="52" y="60" width="150" height="14" rx="7" fill="#1a7f5a" opacity=".85"/>
+        <rect x="52" y="86" width="230" height="9" rx="4" fill="#a9c8ba"/>
+        <rect x="52" y="104" width="196" height="9" rx="4" fill="#c9ddd3"/>
+        <rect x="52" y="136" width="140" height="64" rx="10" fill="#f0b429" opacity=".22"/>
+        <rect x="204" y="136" width="164" height="26" rx="6" fill="#d8ece3"/>
+        <rect x="204" y="172" width="132" height="26" rx="6" fill="#d8ece3"/>
+        <circle cx="92" cy="252" r="20" fill="#1a7f5a"/>
+        <path d="M84 252l6 6 11-13" stroke="#fff" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="126" y="242" width="180" height="10" rx="5" fill="#a9c8ba"/>
+        <rect x="126" y="260" width="130" height="8" rx="4" fill="#c9ddd3"/>
+        <path d="M330 196c22-6 40 8 40 30s-18 38-40 32" fill="none" stroke="#1a7f5a" stroke-width="3" stroke-dasharray="6 7" opacity=".5"/>
+      </svg>
+      <div class="hero-float hf1">今日新增 9 条时间线</div>
+      <div class="hero-float hf2">《长风渡口》第 18 集</div>
+      <div class="hero-float hf3">综艺《夜谈厨房》争议回应</div>
+    </div>
+  </div>
+</section>
+
+<!-- 三栏门户 -->
+<div class="portal">
+
+  <!-- 左侧频道索引 -->
+  <aside class="channel-rail" aria-label="频道索引">
+    <div class="rail-card">
+      <div class="rail-title">频道索引</div>
+      <ul class="rail-list">
+        <li><a href="/#fenlei">影视剧集 <span class="cnt">24</span></a></li>
+        <li><a href="/#fenlei">综艺现场 <span class="cnt">18</span></a></li>
+        <li><a href="/#fenlei">明星行程 <span class="cnt">21</span></a></li>
+        <li><a href="/#fenlei">舞台演出 <span class="cnt">11</span></a></li>
+        <li><a href="/#fenlei">品牌代言 <span class="cnt">9</span></a></li>
+        <li><a href="/#fenlei">奖项评选 <span class="cnt">7</span></a></li>
+        <li><a href="/#fenlei">片场花絮 <span class="cnt">14</span></a></li>
+        <li><a href="/#fenlei">社交发声 <span class="cnt">16</span></a></li>
+        <li><a href="/#fenlei">番位争议 <span class="cnt">6</span></a></li>
+        <li><a href="/#fenlei">票房口碑 <span class="cnt">8</span></a></li>
+      </ul>
+      <div class="rail-note">
+        <strong>事件核对提示</strong>
+        同一话题常有艺人方、节目组、现场观众三种说法，先看时间线再判断。
+      </div>
+    </div>
+  </aside>
+
+  <!-- 主内容 -->
+  <main class="main-col">
+
+    <!-- 1 主题领域概览 -->
+    <section class="section" id="gaishu">
+      <div class="sec-head"><h2>娱乐热点领域概览</h2></div>
+      <p class="sec-sub">从剧集排播到综艺现场，从行程变更到品牌合作，看清一个话题处在什么位置。</p>
+      <div class="overview-text">
+        <p>
+          吃瓜网chigua 所对应的内容领域，本质上是<strong>娱乐事件的聚合与梳理</strong>。它包含几条相对独立的线索：
+          影视剧集的定档与播出进度、综艺节目的录制与名场面、艺人公开行程与商务合作、舞台演出与奖项评选、
+          以及社交平台上的公开发声。这些线索经常互相交叉——一部剧的番位争议会牵出演员过往合作，
+          一档综艺的剪辑争议会波及嘉宾代言，因此单看一条短消息往往判断不了全貌。
+        </p>
+        <p>
+          当前值得关注的具体方向有三类。第一类是<strong>排播节奏</strong>：2026 年 10 月下旬到 11 月初，
+          多部古装与都市剧集中在周中更新，《长风渡口》《雾港来信》《半城灯火》都在这段时间进入剧情中段，
+          观众讨论从“能不能追”转向“哪一集转折最硬”。第二类是<strong>综艺现场争议</strong>：
+          《夜谈厨房》第 6 期的剪辑顺序、《即兴星期六》的临时换人，都引发了关于节目组剪辑权的讨论。
+          第三类是<strong>商务与行程</strong>：双十一档期前后，代言官宣、直播排期、机场路透密集出现，
+          信息真假混杂，需要对照官方账号与品牌方公告。
+        </p>
+        <p>
+          对普通读者来说，追逐娱乐热点的成本主要不在“看到”，而在“看懂”。一条热搜往往只给结论不给过程，
+          而事件的关键常常藏在时间顺序里：谁先发声、谁后回应、哪一方删了内容、哪家媒体拿到了第一手采访。
+          把这几项对齐，多数争议就能还原出大致轮廓，剩下的才是立场与喜好问题。
+        </p>
+      </div>
+    </section>
+
+    <!-- 2 精选内容推荐 -->
+    <section class="section" id="jingxuan">
+      <div class="sec-head"><h2>近期值得追的具体事件</h2><a class="more" href="/#zuixin">更多动态 →</a></div>
+      <p class="sec-sub">8 个正在发酵或刚有定论的话题，每个都标注了类型与当前进度。</p>
+      <div class="card-grid">
+
+        <article class="pick-card">
+          <div class="pick-thumb">
+            <img src="https://picsum.photos/seed/chigua-changfeng18/400/300" width="400" height="300" loading="lazy" alt="古装剧《长风渡口》第 18 集渡口对峙场景">
+            <span class="pick-type">剧集</span>
+          </div>
+          <div class="pick-body">
+            <h3>《长风渡口》第 18 集渡口对峙</h3>
+            <div class="tag-row"><span class="tag">古装</span><span class="tag">剧情转折</span><span class="tag">弹幕热议</span></div>
+            <p class="pick-desc">第 18 集把前 17 集埋下的信物线索一次收拢，渡口对峙戏拍了 4 天，导演用了长镜头。争议点在男二动机是否交代充分，原著粉与剧粉各执一词。</p>
+            <div class="pick-meta"><span>更新至 18 集</span><span class="heat">讨论 42.6 万</span></div>
+          </div>
+        </article>
+
+        <article class="pick-card">
+          <div class="pick-thumb">
+            <img src="https://picsum.photos/seed/chigua-yetantf06/400/300" width="400" height="300" loading="lazy" alt="综艺《夜谈厨房》第六期厨房录制现场">
+            <span class="pick-type">综艺</span>
+          </div>
+          <div class="pick-body">
+            <h3>《夜谈厨房》第 6 期剪辑争议</h3>
+            <div class="tag-row"><span class="tag">慢综艺</span><span class="tag">剪辑顺序</span><span class="tag">节目组回应</span></div>
+            <p class="pick-desc">观众发现正片里嘉宾对话顺序与花絮版不一致，节目组 11 月 4 日发布说明称是“时长压缩所致”。争议核心在于是否影响人物评价。</p>
+            <div class="pick-meta"><span>11-04 回应</span><span class="heat">讨论 28.3 万</span></div>
+          </div>
+        </article>
+
+        <article class="pick-card">
+          <div class="pick-thumb">
+            <img src="https://picsum.photos/seed/chigua-wugang12/400/300" width="400" height="300" loading="lazy" alt="悬疑剧《雾港来信》雨夜码头剧照">
+            <span class="pick-type">剧集</span>
+          </div>
+          <div class="pick-body">
+            <h3>《雾港来信》雨夜码头线索回收</h3>
+            <div class="tag-row"><span class="tag">悬疑</span><span class="tag">周更</span><span class="tag">伏笔解析</span></div>
+            <p class="pick-desc">第 12 集把第 3 集出现的旧信封与第 9 集的码头监控串起来，是近期伏笔回收最完整的一集。适合喜欢边看边梳理线索的观众。</p>
+            <div class="pick-meta"><span>更新至 12 集</span><span class="heat">评分 8.6</span></div>
+          </div>
+        </article>
+
+        <article class="pick-card">
+          <div class="pick-thumb">
+            <img src="https://picsum.photos/seed/chigua-jixingzhouliu/400/300" width="400" height="300" loading="lazy" alt="综艺《即兴星期六》舞台灯光与观众席">
+            <span class="pick-type">综艺</span>
+          </div>
+          <div class="pick-body">
+            <h3>《即兴星期六》临时换人风波</h3>
+            <div class="tag-row"><span class="tag">即兴喜剧</span><span class="tag">嘉宾调整</span><span class="tag">录制现场</span></div>
+            <p class="pick-desc">10 月 31 日录制场次临时调整常驻阵容，现场观众透露替补嘉宾仅彩排两小时。节目效果与公平性成为讨论焦点。</p>
+            <div class="pick-meta"><span>10-31 录制</span><span class="heat">讨论 19.7 万</span></div>
+          </div>
+        </article>
+
+        <article class="pick-card">
+          <div class="pick-thumb">
+            <img src="https://picsum.photos/seed/chigua-banchengdenghuo/400/300" width="400" height="300" loading="lazy" alt="都市剧《半城灯火》街景夜戏画面">
+            <span class="pick-type">剧集</span>
+          </div>
+          <div class="pick-body">
+            <h3>《半城灯火》番位说明发布</h3>
+            <div class="tag-row"><span class="tag">都市</span><span class="tag">番位</span><span class="tag">出品方声明</span></div>
+            <p class="pick-desc">出品方 11 月 2 日就片头署名顺序发布说明，明确按角色出场篇幅排序。此前粉丝对双主角排位存在分歧。</p>
+            <div class="pick-meta"><span>11-02 声明</span><span class="heat">讨论 15.4 万</span></div>
+          </div>
+        </article>
+
+        <article class="pick-card">
+          <div class="pick-thumb">
+            <img src="https://picsum.photos/seed/chigua-shuangshiyi-daiyan/400/300" width="400" height="300" loading="lazy" alt="双十一品牌代言官宣海报拍摄花絮">
+            <span class="pick-type">商务</span>
+          </div>
+          <div class="pick-body">
+            <h3>双十一档代言官宣密集期</h3>
+            <div class="tag-row"><span class="tag">品牌代言</span><span class="tag">直播排期</span><span class="tag">官宣节奏</span></div>
+            <p class="pick-desc">10 月下旬至 11 月初，美妆、家电、饮品三类品牌集中官宣新代言人，同一天出现多起“预告剪影”式预热，辨别真伪要看品牌官号。</p>
+            <div class="pick-meta"><span>10-25 起</span><span class="heat">官宣 23 起</span></div>
+          </div>
+        </article>
+
+        <article class="pick-card">
+          <div class="pick-thumb">
+            <img src="https://picsum.photos/seed/chigua-wutai-jingyan/400/300" width="400" height="300" loading="lazy" alt="舞台剧《夜航船》演出灯光与布景">
+            <span class="pick-type">舞台</span>
+          </div>
+          <div class="pick-body">
+            <h3>舞台剧《夜航船》加场</h3>
+            <div class="tag-row"><span class="tag">话剧</span><span class="tag">加场</span><span class="tag">票务</span></div>
+            <p class="pick-desc">首轮 12 场售罄后追加 6 场，11 月 15 日开票。该剧以双线叙事著称，观演前建议先读一遍人物关系表。</p>
+            <div class="pick-meta"><span>11-15 开票</span><span class="heat">想看 3.1 万</span></div>
+          </div>
+        </article>
+
+        <article class="pick-card">
+          <div class="pick-thumb">
+            <img src="https://picsum.photos/seed/chigua-jiangxiang-pingxuan/400/300" width="400" height="300" loading="lazy" alt="年度剧集评选评审现场资料图">
+            <span class="pick-type">奖项</span>
+          </div>
+          <div class="pick-body">
+            <h3>年度剧集评选初选名单</h3>
+            <div class="tag-row"><span class="tag">评选</span><span class="tag">初选名单</span><span class="tag">评审规则</span></div>
+            <p class="pick-desc">11 月 6 日公布 30 部初选剧集，评审权重为观众投票 40%、专业评审 60%。古装与悬疑两类占据名单近半。</p>
+            <div class="pick-meta"><span>11-06 公布</span><span class="heat">入围 30 部</span></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 3 最新动态 -->
+    <section class="section" id="zuixin">
+      <div class="sec-head"><h2>最新更新与播出动态</h2></div>
+      <p class="sec-sub">按时间倒序排列，含剧集集数、综艺期数、声明与录制进度。</p>
+      <ul class="update-list">
+        <li><span class="up-dot hot"></span><div><div class="up-name"><a href="/#jingxuan">《长风渡口》第 18 集上线</a></div><div class="up-sum">渡口对峙戏份完整放出，片尾追加 40 秒彩蛋。</div></div><span class="up-time">今天 09:30</span></li>
+        <li><span class="up-dot hot"></span><div><div class="up-name"><a href="/#zixun">《夜谈厨房》节目组发布剪辑说明</a></div><div class="up-sum">承认正片与花絮存在顺序差异，承诺下期附完整版。</div></div><span class="up-time">昨天 21:10</span></li>
+        <li><span class="up-dot"></span><div><div class="up-name"><a href="/#jingxuan">《雾港来信》第 12 集更新</a></div><div class="up-sum">旧信封与码头监控两条线索合并，弹幕集中讨论第 3 集伏笔。</div></div><span class="up-time">11 月 7 日 20:00</span></li>
+        <li><span class="up-dot"></span><div><div class="up-name"><a href="/#shijian">《半城灯火》出品方番位说明</a></div><div class="up-sum">明确按角色出场篇幅排序，同步公布完整片头名单。</div></div><span class="up-time">11 月 2 日 14:20</span></li>
+        <li><span class="up-dot"></span><div><div class="up-name"><a href="/#jingxuan">《即兴星期六》第 9 期补录完成</a></div><div class="up-sum">替补嘉宾参与的两段即兴段落确认保留，正片时长增加 12 分钟。</div></div><span class="up-time">11 月 1 日 18:40</span></li>
+        <li><span class="up-dot"></span><div><div class="up-name"><a href="/#zixun">年度剧集评选初选名单公布</a></div><div class="up-sum">30 部入围，观众投票通道 11 月 10 日开启。</div></div><span class="up-time">11 月 6 日 10:00</span></li>
+        <li><span class="up-dot"></span><div><div class="up-name"><a href="/#jingxuan">舞台剧《夜航船》追加 6 场</a></div><div class="up-sum">11 月 15 日 12:00 开票，每人限购 2 张。</div></div><span class="up-time">11 月 5 日 16:30</span></li>
+        <li><span class="up-dot"></span><div><div class="up-name"><a href="/#zixun">双十一代言官宣第 23 起</a></div><div class="up-sum">饮品品牌公布新代言人，同步释出 30 秒短片。</div></div><span class="up-time">11 月 4 日 11:15</span></li>
+        <li><span class="up-dot"></span><div><div class="up-name"><a href="/#shijian">《长风渡口》第 19 集预告释出</a></div><div class="up-sum">预告片 1 分 12 秒，出现此前未登场的新角色。</div></div><span class="up-time">11 月 3 日 19:50</span></li>
+        <li><span class="up-dot"></span><div><div class="up-name"><a href="/#pinglun">《雾港来信》导演访谈上线</a></div><div class="up-sum">谈及码头戏拍摄顺序，称第 3 集伏笔是开机前就定好的。</div></div><span class="up-time">10 月 30 日 15:00</span></li>
+      </ul>
+    </section>
+
+    <!-- 4 分类入口 -->
+    <section class="section" id="fenlei">
+      <div class="sec-head"><h2>按类型找事件</h2></div>
+      <p class="sec-sub">8 个常用分类，点击进入对应话题集合。</p>
+      <div class="cat-grid">
+        <a class="cat-item" href="/#jingxuan"><span class="cat-name">影视剧集</span><span class="cat-desc">定档、播出进度、剧情转折与番位争议</span></a>
+        <a class="cat-item" href="/#jingxuan"><span class="cat-name">综艺现场</span><span class="cat-desc">录制花絮、剪辑争议、嘉宾调整</span></a>
+        <a class="cat-item" href="/#zuixin"><span class="cat-name">明星行程</span><span class="cat-desc">公开活动、机场路透、直播排期</span></a>
+        <a class="cat-item" href="/#jingxuan"><span class="cat-name">舞台演出</span><span class="cat-desc">话剧、音乐剧、演唱会加场与开票</span></a>
+        <a class="cat-item" href="/#zixun"><span class="cat-name">品牌代言</span><span class="cat-desc">官宣节奏、预告剪影、合作类型</span></a>
+        <a class="cat-item" href="/#zixun"><span class="cat-name">奖项评选</span><span class="cat-desc">入围名单、评审规则、投票权重</span></a>
+        <a class="cat-item" href="/#shendu"><span class="cat-name">片场花絮</span><span class="cat-desc">拍摄周期、幕后采访、道具细节</span></a>
+        <a class="cat-item" href="/#pinglun"><span class="cat-name">社交发声</span><span class="cat-desc">艺人回应、工作室声明、粉丝讨论</span></a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析 -->
+    <section class="section deep" id="shendu">
+      <div class="sec-head"><h2>深度解析：一条娱乐热点该怎么读</h2></div>
+      <p class="sec-sub">以近期三个具体话题为例，拆解判断顺序与常见误区。</p>
+
+      <h3>一、剧集类话题：先看排播，再看争议点</h3>
+      <p>
+        剧集话题的信息量分布很不均匀。定档期看的是平台排播与同档竞争，播出中段看的是剧情转折是否站得住，
+        收官前后才是口碑与奖项讨论。以《长风渡口》为例，它在 10 月中旬进入周更节奏，第 18 集播出后讨论量陡增，
+        原因不是宣传，而是这一集把前 17 集的信物线索一次性收拢。判断这类话题值不值得跟，可以看三点：
+      </p>
+      <ul>
+        <li><span class="em">更新节奏是否稳定。</span>周更剧一旦断更，讨论热度会快速回落，后续剧情再硬也难拉回。</li>
+        <li><span class="em">争议点落在剧本还是表演。</span>落在剧本的多半有后续解释空间，落在表演的往往很快定性。</li>
+        <li><span class="em">原著与改编的差异是否提前公开。</span>差异若在开播前说明，播出后的争论会温和很多。</li>
+      </ul>
+
+      <h3>二、综艺类话题：剪辑顺序比台词更关键</h3>
+      <p>
+        《夜谈厨房》第 6 期的争议，表面是“谁先说了什么”，实质是正片与花絮的剪辑顺序不同。慢综艺的素材时长通常是成片的 20 倍以上，
+        剪辑权完全在节目组手里，因此同一段对话换个顺序，观众对嘉宾的判断就可能反转。看这类话题时，
+        先找三个材料：正片、花絮版、现场观众描述。三者对齐的部分可信度高，只有一方提供的细节要多留一分。
+      </p>
+      <p>
+        《即兴星期六》的换人风波则是另一种情况。即兴类节目对嘉宾熟悉度要求高，临时替补的表演效果天然吃亏，
+        所以讨论焦点很快从“换人是否合理”转向“节目组有没有提前告知观众”。这类话题的结论往往不在节目本身，
+        而在制作流程的透明度上。
+      </p>
+
+      <h3>三、商务类话题：官宣节奏本身就是信息</h3>
+      <p>
+        双十一前后是代言官宣最密集的时段。10 月 25 日到 11 月 4 日，仅美妆、家电、饮品三类就出现 23 起官宣，
+        其中不少采用“剪影预告—倒计时—正式官宣”的三段式节奏。这种节奏的作用是把一次官宣拆成三次曝光，
+        因此看到剪影时不必急着对号入座，等品牌官号发布正式物料再确认更稳妥。
+      </p>
+      <ul>
+        <li><span class="em">看发布主体。</span>品牌官号、品牌直播间、艺人工作室三方口径一致，才算落定。</li>
+        <li><span class="em">看合作类型。</span>品牌代言人、系列大使、单场直播嘉宾，权益差别很大，标题常被简化。</li>
+        <li><span class="em">看时间节点。</span>大促前的官宣多带销售任务，评价合作效果要等大促结束后的数据。</li>
+      </ul>
+
+      <h3>四、奖项与评选：权重规则决定名单走向</h3>
+      <p>
+        年度剧集评选的初选名单在 11 月 6 日公布，30 部入围作品中古装与悬疑合计接近一半。这类名单的解读关键在权重：
+        本届规则是观众投票 40%、专业评审 60%，意味着人气高但评审分低的剧集很难走到最后。
+        反过来，评审青睐但讨论度一般的作品，只要观众投票不掉队，反而有机会。看名单时不妨先算一遍两类作品的分布，
+        再判断最终结果的大致区间。
+      </p>
+      <p>
+        需要提醒的是，评选类话题的讨论容易滑向“谁该得”，但更有信息量的是“规则怎么定”。规则一旦公开，
+        结果的可预期性就大幅提高，争议也会从情绪转向具体的评分项。
+      </p>
+    </section>
+
+    <!-- 6 体验指南 -->
+    <section class="section" id="zhinan">
+      <div class="sec-head"><h2>观看与判断路径</h2></div>
+      <p class="sec-sub">第一次接触娱乐热点，可以按这个顺序建立判断习惯。</p>
+      <div class="step-list">
+        <div class="step">
+          <div class="step-num"></div>
+          <div><h4>先确认事件处在哪个阶段</h4><p>是刚曝光、已有回应，还是已经收尾。阶段不同，需要看的信息量差别很大，刚曝光时只需记住时间与当事方。</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num"></div>
+          <div><h4>再找第一手材料</h4><p>剧集看正片与官方预告，综艺看正片与花絮版，商务看品牌官号。二手转述容易丢时间顺序，判断前先回到源头。</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num"></div>
+          <div><h4>对照不同来源的说法</h4><p>艺人方、节目组、现场观众、媒体报道四方口径常有差异，把差异点列出来，往往就是争议的核心。</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num"></div>
+          <div><h4>判断值不值得投入时间</h4><p>剧集看更新是否稳定与争议是否落在剧本，综艺看剪辑是否透明，商务看官宣是否三方一致。三项都不满足，可以先放一放。</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num"></div>
+          <div><h4>同类条目做横向比较</h4><p>同档期剧集比排播与题材，同类综艺比嘉宾阵容与制作班底，同类型代言比合作深度。横向比较比单看一条更容易得出结论。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="section" id="faq">
+      <div class="sec-head"><h2>常见问答</h2></div>
+      <p class="sec-sub">围绕更新节奏、类型差异与判断标准的具体问题。</p>
+
+      <details class="faq-item" open>
+        <summary>周更剧一般多久更新一次，断更常见吗？</summary>
+        <div class="faq-answer">国内平台的周更剧多为每周更新 2 到 4 集，集中在周三至周日。遇到节假日或后期制作调整会短暂断更，通常提前三到五天在官方账号公告。像《长风渡口》这类 40 集体量，完整播出周期大约 10 到 12 周。</div>
+      </details>
+      <details class="faq-item">
+        <summary>《长风渡口》和《雾港来信》有什么区别，适合不同的观众吗？</summary>
+        <div class="faq-answer">前者是古装群像，重人物关系与信物线索，节奏偏慢热；后者是悬疑周更，重伏笔回收与单集钩子，每集结尾都有明确推进。喜欢慢慢梳理人物关系的可以从《长风渡口》入手，喜欢边看边推理的更适合《雾港来信》。</div>
+      </details>
+      <details class="faq-item">
+        <summary>第一次接触这类娱乐话题，从哪个条目开始看比较好？</summary>
+        <div class="faq-answer">建议从已经有官方回应的事件入手，比如《半城灯火》的番位说明或《夜谈厨房》的剪辑说明。这类话题材料齐全、时间线清晰，适合先建立判断顺序，再去看仍在发酵中的争议。</div>
+      </details>
+      <details class="faq-item">
+        <summary>综艺剪辑争议通常怎么判断哪一方说法更可信？</summary>
+        <div class="faq-answer">先看是否有完整花絮版公开，再看现场观众描述是否与花絮一致，最后看节目组说明是否给出具体原因而非笼统表述。三方材料能对齐的部分可信度最高，只有单方提供的细节需要保留。</div>
+      </details>
+      <details class="faq-item">
+        <summary>品牌代言的“代言人”和“系列大使”有什么实际差别？</summary>
+        <div class="faq-answer">代言人通常覆盖品牌全线，合作周期以年计，参与主视觉与大型活动；系列大使多对应单条产品线或限定系列，周期较短，权益集中在特定品类。官宣标题常把两者简化，具体看品牌公告里的合作范围描述。</div>
+      </details>
+      <details class="faq-item">
+        <summary>年度剧集评选的评判标准通常是什么？</summary>
+        <div class="faq-answer">常见组合是观众投票加专业评审，本届权重为 40% 与 60%。评审项一般包括剧本完成度、表演、制作水准与社会讨论度，各届权重会调整。规则公开后，入围名单的走向基本可以按权重推算。</div>
+      </details>
+    </section>
+
+    <!-- 8 用户评论 -->
+    <section class="section" id="pinglun">
+      <div class="sec-head"><h2>网友讨论</h2></div>
+      <p class="sec-sub">围绕具体条目与类型的真实语气讨论，含中性评价。</p>
+      <div class="comment-grid">
+
+        <div class="comment"><div class="cm-head"><span class="avatar" style="background:#1a7f5a">林</span><span class="cm-name">林间有雾</span><span class="cm-time">今天 10:12</span></div><p class="cm-text"><b>《长风渡口》</b>第 18 集那个长镜头确实稳，但男二动机我还是没看明白，等第 19 集解释。</p></div>
+        <div class="comment"><div class="cm-head"><span class="avatar" style="background:#c9761b">周</span><span class="cm-name">周末不加班</span><span class="cm-time">今天 09:48</span></div><p class="cm-text">《夜谈厨房》花絮版我看完了，顺序确实不一样，不过影响没想象中大，主要还是时长剪得狠。</p></div>
+        <div class="comment"><div class="cm-head"><span class="avatar" style="background:#3c6e8f">阿</span><span class="cm-name">阿柚看剧</span><span class="cm-time">昨天 22:30</span></div><p class="cm-text"><b>《雾港来信》</b>第 12 集把第 3 集的信封翻出来，我倒回去重看了一遍，伏笔埋得挺早。</p></div>
+        <div class="comment"><div class="cm-head"><span class="avatar" style="background:#7a5b12">沉</span><span class="cm-name">沉默的遥控器</span><span class="cm-time">昨天 21:05</span></div><p class="cm-text">番位说明发得挺及时，但片头名单和说明里的顺序好像对不上，不知道是不是我看错了。</p></div>
+        <div class="comment"><div class="cm-head"><span class="avatar" style="background:#8f3c5a">小</span><span class="cm-name">小满不吃瓜</span><span class="cm-time">昨天 19:40</span></div><p class="cm-text">即兴星期六换人那期我看了，替补嘉宾明显放不开，效果一般，但也不能全怪人家。</p></div>
+        <div class="comment"><div class="cm-head"><span class="avatar" style="background:#1a7f5a">南</span><span class="cm-name">南墙撞了</span><span class="cm-time">11 月 7 日 23:11</span></div><p class="cm-text">双十一官宣太多了，剪影预告我一个都没猜对，还是等官号吧。</p></div>
+        <div class="comment"><div class="cm-head"><span class="avatar" style="background:#3c6e8f">夜</span><span class="cm-name">夜航船观众</span><span class="cm-time">11 月 7 日 20:26</span></div><p class="cm-text">《夜航船》加场了，首轮没抢到，这次定好闹钟。双线叙事确实需要提前看人物表。</p></div>
+        <div class="comment"><div class="cm-head"><span class="avatar" style="background:#c9761b">剧</span><span class="cm-name">剧场常客</span><span class="cm-time">11 月 6 日 18:02</span></div><p class="cm-text">年度评选名单古装悬疑占一半，评审权重 60% 的话，人气剧不一定能走到最后。</p></div>
+        <div class="comment"><div class="cm-head"><span class="avatar" style="background:#8f3c5a">慢</span><span class="cm-name">慢热选手</span><span class="cm-time">11 月 6 日 14:35</span></div><p class="cm-text">《长风渡口》前 10 集确实有点拖，从第 12 集开始才好看起来，坚持下来是值得的。</p></div>
+        <div class="comment"><div class="cm-head"><span class="avatar" style="background:#1a7f5a">电</span><span class="cm-name">电影资料馆</span><span class="cm-time">11 月 5 日 21:19</span></div><p class="cm-text">《半城灯火》都市线拍得不错，就是番位这事反复上热搜有点消耗观感。</p></div>
+        <div class="comment"><div class="cm-head"><span class="avatar" style="background:#3c6e8f">一</span><span class="cm-name">一只柠檬</span><span class="cm-time">11 月 5 日 16:48</span></div><p class="cm-text">慢综艺我还是喜欢看未剪辑版，正片太赶了，嘉宾聊天都接不上。</p></div>
+        <div class="comment"><div class="cm-head"><span class="avatar" style="background:#c9761b">橙</span><span class="cm-name">橙子汽水</span><span class="cm-time">11 月 4 日 20:07</span></div><p class="cm-text">节目组回应算及时，但说明里没给具体时间点，还是有点模糊。</p></div>
+        <div class="comment"><div class="cm-head"><span class="avatar" style="background:#1a7f5a">追</span><span class="cm-name">追更中</span><span class="cm-time">11 月 4 日 13:52</span></div><p class="cm-text">《雾港来信》每集结尾都留钩子，这个习惯保持得不错，就是周更太慢。</p></div>
+        <div class="comment"><div class="cm-head"><span class="avatar" style="background:#8f3c5a">无</span><span class="cm-name">无名看客</span><span class="cm-time">11 月 3 日 22:41</span></div><p class="cm-text">代言剪影猜谜这种营销看多了就疲了，直接官宣反而更清爽。</p></div>
+        <div class="comment"><div class="cm-head"><span class="avatar" style="background:#3c6e8f">剧</span><span class="cm-name">剧评小站</span><span class="cm-time">11 月 3 日 17:20</span></div><p class="cm-text">《长风渡口》第 18 集的调度是近期古装里比较讲究的，运镜和人物站位都有设计。</p></div>
+        <div class="comment"><div class="cm-head"><span class="avatar" style="background:#c9761b">路</span><span class="cm-name">路人甲乙</span><span class="cm-time">11 月 2 日 19:15</span></div><p class="cm-text">番位说明写得挺清楚，按出场篇幅排序这个标准至少是可查的。</p></div>
+
+      </div>
+    </section>
+
+    <!-- 9 相关资讯 -->
+    <section class="section" id="zixun">
+      <div class="sec-head"><h2>近期相关资讯</h2></div>
+      <p class="sec-sub">新条目上线、规则调整与社区讨论焦点的具体进展。</p>
+      <ul class="news-list">
+        <li>
+          <div class="news-thumb"><img src="https://picsum.photos/seed/chigua-xunwen-changfeng/600/400" width="600" height="400" loading="lazy" alt="《长风渡口》第 18 集上线宣传画面"></div>
+          <div><div class="news-date">2026-11-08</div><div class="news-title"><a href="/#zuixin">《长风渡口》第 18 集上线，片尾追加 40 秒彩蛋</a></div><p class="news-sum">彩蛋内容与第 19 集预告衔接，平台同步放出渡口场景的幕后花絮。</p></div>
+        </li>
+        <li>
+          <div class="news-thumb"><img src="https://picsum.photos/seed/chigua-xunwen-yetantf/600/400" width="600" height="400" loading="lazy" alt="《夜谈厨房》节目组剪辑说明发布画面"></div>
+          <div><div class="news-date">2026-11-07</div><div class="news-title"><a href="/#zixun">《夜谈厨房》节目组就剪辑顺序发布说明</a></div><p class="news-sum">说明称时长压缩导致正片顺序调整，下期将附完整版花絮。</p></div>
+        </li>
+        <li>
+          <div class="news-thumb"><img src="https://picsum.photos/seed/chigua-xunwen-pingxuan/600/400" width="600" height="400" loading="lazy" alt="年度剧集评选初选名单公布现场"></div>
+          <div><div class="news-date">2026-11-06</div><div class="news-title"><a href="/#shendu">年度剧集评选初选名单公布，30 部入围</a></div><p class="news-sum">评审权重为观众投票 40%、专业评审 60%，投票通道 11 月 10 日开启。</p></div>
+        </li>
+        <li>
+          <div class="news-thumb"><img src="https://picsum.photos/seed/chigua-xunwen-yehangchuan/600/400" width="600" height="400" loading="lazy" alt="舞台剧《夜航船》加场演出布景"></div>
+          <div><div class="news-date">2026-11-05</div><div class="news-title"><a href="/#jingxuan">舞台剧《夜航船》首轮售罄，追加 6 场</a></div><p class="news-sum">11 月 15 日 12:00 开票，每人限购 2 张，加场沿用首轮卡司。</p></div>
+        </li>
+        <li>
+          <div class="news-thumb"><img src="https://picsum.photos/seed/chigua-xunwen-daiyan/600/400" width="600" height="400" loading="lazy" alt="双十一品牌代言官宣物料画面"></div>
+          <div><div class="news-date">2026-11-04</div><div class="news-title"><a href="/#zixun">双十一档代言官宣累计 23 起，剪影预告成主流</a></div><p class="news-sum">美妆、家电、饮品三类最密集，品牌多采用三段式预热节奏。</p></div>
+        </li>
+        <li>
+          <div class="news-thumb"><img src="https://picsum.photos/seed/chigua-xunwen-jixing/600/400" width="600" height="400" loading="lazy" alt="《即兴星期六》补录录制现场"></div>
+          <div><div class="news-date">2026-11-01</div><div class="news-title"><a href="/#zuixin">《即兴星期六》补录完成，替补嘉宾段落保留</a></div><p class="news-sum">正片时长增加 12 分钟，两段即兴内容确认播出。</p></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="section" id="tuijian">
+      <div class="sec-head"><h2>延伸方向</h2></div>
+      <p class="sec-sub">与热点相关但角度不同的具体方向，适合想继续深挖的读者。</p>
+      <div class="rec-tags">
+        <a href="/#shendu">古装剧排播规律</a>
+        <a href="/#shendu">悬疑剧伏笔回收</a>
+        <a href="/#zhinan">慢综艺剪辑权</a>
+        <a href="/#zixun">品牌代言合作层级</a>
+        <a href="/#zixun">评选权重规则</a>
+        <a href="/#jingxuan">舞台剧加场机制</a>
+        <a href="/#shijian">番位署名标准</a>
+        <a href="/#pinglun">社交平台发声节奏</a>
+      </div>
+    </section>
+
+    <!-- 11 榜单 -->
+    <section class="section" id="bangdan">
+      <div class="sec-head"><h2>话题热度榜（11 月 8 日）</h2></div>
+      <p class="sec-sub">按近 24 小时讨论量排序，含类型与当前进度。</p>
+      <ol class="rank-list">
+        <li><div><div class="rk-name">《长风渡口》第 18 集渡口对峙</div><div class="rk-sub">剧集 · 更新至 18 集</div></div><span class="rk-val">42.6 万</span></li>
+        <li><div><div class="rk-name">《夜谈厨房》剪辑顺序说明</div><div class="rk-sub">综艺 · 11-04 回应</div></div><span class="rk-val">28.3 万</span></li>
+        <li><div><div class="rk-name">《雾港来信》旧信封伏笔回收</div><div class="rk-sub">剧集 · 更新至 12 集</div></div><span class="rk-val">21.9 万</span></li>
+        <li><div><div class="rk-name">《即兴星期六》临时换人</div><div class="rk-sub">综艺 · 11-01 补录</div></div><span class="rk-val">19.7 万</span></li>
+        <li><div><div class="rk-name">《半城灯火》番位说明</div><div class="rk-sub">剧集 · 11-02 声明</div></div><span class="rk-val">15.4 万</span></li>
+        <li><div><div class="rk-name">双十一代言官宣第 23 起</div><div class="rk-sub">商务 · 11-04 官宣</div></div><span class="rk-val">12.8 万</span></li>
+        <li><div><div class="rk-name">舞台剧《夜航船》追加 6 场</div><div class="rk-sub">舞台 · 11-15 开票</div></div><span class="rk-val">9.6 万</span></li>
+        <li><div><div class="rk-name">年度剧集评选初选名单</div><div class="rk-sub">奖项 · 11-06 公布</div></div><span class="rk-val">8.4 万</span></li>
+      </ol>
+    </section>
+
+    <!-- 12 事件时间线 -->
+    <section class="section" id="shijian">
+      <div class="sec-head"><h2>《夜谈厨房》剪辑争议时间线</h2></div>
+      <p class="sec-sub">从播出到回应的完整节点，按日期排列。</p>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-date">10 月 26 日</div><div class="tl-title">第 6 期正片上线</div><p class="tl-desc">正片时长 96 分钟，嘉宾对话顺序与录制现场存在差异。</p></div>
+        <div class="tl-item"><div class="tl-date">10 月 28 日</div><div class="tl-title">花絮版释出</div><p class="tl-desc">平台放出 22 分钟未剪辑片段，观众发现两处对话顺序不同。</p></div>
+        <div class="tl-item"><div class="tl-date">10 月 30 日</div><div class="tl-title">现场观众发帖描述录制过程</div><p class="tl-desc">多位观众提到录制当天有一段讨论被完整保留但未进正片。</p></div>
+        <div class="tl-item"><div class="tl-date">11 月 2 日</div><div class="tl-title">话题进入热搜前十</div><p class="tl-desc">讨论焦点从“剪辑顺序”扩展到“嘉宾评价是否被引导”。</p></div>
+        <div class="tl-item"><div class="tl-date">11 月 4 日</div><div class="tl-title">节目组发布剪辑说明</div><p class="tl-desc">说明称时长压缩导致顺序调整，承诺下期附完整版花絮。</p></div>
+        <div class="tl-item"><div class="tl-date">11 月 7 日</div><div class="tl-title">完整版花絮上线</div><p class="tl-desc">时长 38 分钟，包含此前未播出的两段讨论，争议逐步回落。</p></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右侧辅助栏 -->
+  <aside class="side-col" aria-label="辅助信息">
+    <div class="side-card">
+      <h2>今日更新流</h2>
+      <p class="side-sub">11 月 8 日新增与变动</p>
+      <ul class="side-list">
+        <li><a href="/#zuixin">《长风渡口》第 18 集上线</a><span class="s-time">今天 09:30</span></li>
+        <li><a href="/#zixun">《夜谈厨房》完整版花絮</a><span class="s-time">昨天 21:10</span></li>
+        <li><a href="/#zuixin">《雾港来信》第 12 集更新</a><span class="s-time">11 月 7 日 20:00</span></li>
+        <li><a href="/#shijian">《半城灯火》番位说明</a><span class="s-time">11 月 2 日 14:20</span></li>
+        <li><a href="/#zixun">年度评选初选名单</a><span class="s-time">11 月 6 日 10:00</span></li>
+      </ul>
+    </div>
+
+    <div class="side-card">
+      <h2>热榜速览</h2>
+      <p class="side-sub">近 24 小时讨论量</p>
+      <ul class="side-hot">
+        <li><span class="n">01</span><span class="t">《长风渡口》第 18 集</span></li>
+        <li><span class="n">02</span><span class="t">《夜谈厨房》剪辑说明</span></li>
+        <li><span class="n">03</span><span class="t">《雾港来信》伏笔回收</span></li>
+        <li><span class="n">04</span><span class="t">《即兴星期六》换人</span></li>
+        <li><span class="n">05</span><span class="t">《半城灯火》番位</span></li>
+        <li><span class="n">06</span><span class="t">双十一代言官宣</span></li>
+        <li><span class="n">07</span><span class="t">《夜航船》加场</span></li>
+        <li><span class="n">08</span><span class="t">年度剧集评选</span></li>
+      </ul>
+    </div>
+
+    <div class="side-card">
+      <h2>查看提示</h2>
+      <p class="side-sub">三个常用判断动作</p>
+      <div class="side-tip">
+        <strong>先看时间顺序</strong>
+        同一话题里，谁先发声、谁后回应，往往决定争议的走向。
+      </div>
+      <div class="side-tip" style="margin-top:10px;">
+        <strong>再找第一手材料</strong>
+        正片、花絮版、品牌官号公告，比转述更可靠。
+      </div>
+      <div class="side-tip" style="margin-top:10px;">
+        <strong>最后看规则</strong>
+        评选权重、署名标准、合作层级，规则公开后结论更容易推。
+      </div>
+    </div>
+  </aside>
+
+</div>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="f-brand">
+          <svg width="34" height="34" viewBox="0 0 64 64" role="img" aria-label="吃瓜网chigua 页尾标志">
+            <rect width="64" height="64" rx="14" fill="#22946a"/>
+            <circle cx="32" cy="30" r="13" fill="none" stroke="#f3e9d2" stroke-width="3"/>
+            <path d="M19 30h26M32 17v26" stroke="#f3e9d2" stroke-width="2"/>
+            <path d="M20 46c6-5 18-5 24 0" fill="none" stroke="#f0b429" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          <div>
+            <span class="brand-text">吃瓜网chigua</span>
+            <span class="brand-sub">娱乐热点 · 事件梳理</span>
+          </div>
+        </div>
+        <p class="f-desc">聚合剧集排播、综艺现场、明星行程与品牌代言话题，用时间线与多来源对照还原事件走向。</p>
+      </div>
+      <div class="f-cols">
+        <div class="f-col">
+          <h3>内容频道</h3>
+          <ul>
+            <li><a href="/#jingxuan">精选事件</a></li>
+            <li><a href="/#zuixin">最新动态</a></li>
+            <li><a href="/#fenlei">分类入口</a></li>
+            <li><a href="/#bangdan">热度榜单</a></li>
+          </ul>
+        </div>
+        <div class="f-col">
+          <h3>深度与指南</h3>
+          <ul>
+            <li><a href="/#shendu">深度解析</a></li>
+            <li><a href="/#zhinan">观看指南</a></li>
+            <li><a href="/#faq">常见问答</a></li>
+            <li><a href="/#shijian">事件时间线</a></li>
+          </ul>
+        </div>
+        <div class="f-col">
+          <h3>社区与资讯</h3>
+          <ul>
+            <li><a href="/#pinglun">网友讨论</a></li>
+            <li><a href="/#zixun">相关资讯</a></li>
+            <li><a href="/#tuijian">延伸方向</a></li>
+            <li><a href="/#gaishu">领域概览</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 吃瓜网chigua · 内容聚合示例站点</span>
+      <span>部分内容为示例数据，仅用于展示页面结构</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('siteSearch');
+  var feedback = document.getElementById('searchFeedback');
+  if(!form || !input || !feedback) return;
+
+  var targets = [];
+  document.querySelectorAll('main .pick-card, main .update-list li, main .news-list li, main .comment, main .faq-item, main .cat-item, main .rank-list li, main .tl-item, .side-hot li').forEach(function(el){
+    targets.push({el: el, text: (el.textContent || '').toLowerCase()});
+  });
+
+  function clearHighlights(){
+    targets.forEach(function(t){ t.el.style.outline = ''; t.el.style.outlineOffset = ''; });
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    clearHighlights();
+    var q = input.value.trim().toLowerCase();
+    if(!q){
+      feedback.textContent = '请输入要查找的事件、剧集或综艺名称。';
+      feedback.classList.add('show');
+      return;
+    }
+    var hits = targets.filter(function(t){ return t.text.indexOf(q) !== -1; });
+    if(hits.length === 0){
+      feedback.textContent = '没有找到与“' + input.value.trim() + '”相关的内容，试试《长风渡口》《夜谈厨房》或“代言”。';
+      feedback.classList.add('show');
+      return;
+    }
+    hits.forEach(function(t){
+      t.el.style.outline = '2px solid #f0b429';
+      t.el.style.outlineOffset = '2px';
+    });
+    hits[0].el.scrollIntoView({behavior:'smooth', block:'center'});
+    feedback.textContent = '找到 ' + hits.length + ' 条与“' + input.value.trim() + '”相关的内容，已高亮显示。';
+    feedback.classList.add('show');
+  });
+
+  input.addEventListener('input', function(){
+    if(!input.value.trim()){
+      clearHighlights();
+      feedback.classList.remove('show');
+      feedback.textContent = '';
+    }
+  });
+})();
+</script>
+
+</body>
+                                   </html>
